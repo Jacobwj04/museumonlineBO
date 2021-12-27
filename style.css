@@ -8,35 +8,46 @@ header{
     height: 60px; 
     display: flex;
     align-items: center;
+    max-width: 100vw;
+    padding-right: 2%;
+    padding-left: 2%;
 }
 
 a{
-    background-color: none;
     color: snow;
-    text-align: center; 
     text-decoration: none;
     font-family: sans-serif;
     background-color: rgb(31, 31, 31);
-    margin-right: 20px;
-    margin-left: 40px;
-    font-size: 25px;
+    font-size: 200%;
+    margin: 20px;
+}
+
+.aEN{
+    color: snow;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: rgb(31, 31, 31);
+    font-size: 200%;
+}
+
+.aNL{
+    color: snow;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: rgb(31, 31, 31);
+    font-size: 200%;
 }
 
 .ticket{
-    background-color: none;
     color: turquoise;
-    text-align: center; 
     text-decoration: none;
     font-family: sans-serif;
     background-color: rgb(31, 31, 31);
-    margin-right: 20px;
-    margin-left: 40px;
-    font-size: 25px;
-
+    font-size: 200%;
 }
 
-a:hover{
-    text-decoration: underline;
+.ticket:hover{
+  cursor: pointer;
 }
 
 article{
@@ -49,31 +60,41 @@ body{
 }
 
 
-
 p{
     margin: 20px;
+    font-size: 100%;
+    font-family: sans-serif;
 }
 
 img{
     width: 100%;
 }
 
+.imgwidth{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+}
 
 nav a:hover{
     border-bottom: snow;
+    text-decoration: underline;
 }
 
 
 .dropbtn {
     background-color: rgb(31, 31, 31);
     color: white;
-    font-size: 25px;
+    font-size: 200%;
     border: none;
-    margin-left: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
+    cursor: pointer;
   }
   
   
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
   }
@@ -81,10 +102,11 @@ nav a:hover{
 
   .dropdown-content {
     display: none;
-    position: absolute;
+    text-align: left;
     background-color: rgb(31, 31, 31);
     min-width: 160px;
     z-index: 1;
+    position: absolute;
   }
   
   
@@ -96,13 +118,168 @@ nav a:hover{
   }
   
   /*Change color of dropdown links on hover*/ 
-  .dropdown-content a:hover {background-color: none;}
+  .dropdown-content a:hover{
+    background-color: none;
+  } 
+
   
   /* Show the dropdown menu on hover*/ 
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown*/
-  .dropdown:hover .dropbtn {background-color: rgb(31, 31, 31);}
+  .dropdown:hover .dropbtn {
+    background-color: rgb(10, 10, 10);
+  }
+
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow1{
+    max-width: 30%;
+    position: relative;
+    left: 60vw;
+
+  }
+
+/* Hide the images by default */
+.slideshowSlides1 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prevslideshow1, .nextslideshow1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextslideshow1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevslideshow1:hover, .nextslideshow1:hover {
+  background-color: rgba(48, 48, 48, 0.678)
+}
+
+/* Caption text */
+.textslideshow1 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertextslideshow1 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dotslideshow1 {
+  position: relative;
+  left: 25vw;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeslideshow1, .dotslideshow1:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadeslideshow1 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+  footer{
+    background-color: rgb(31, 31, 31);
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    max-width: 100vw;
+  }
+
+html{
+    scroll-behavior: smooth;
+    width: 100vw;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgb(31, 31, 31);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  color: snow;
+}
+
+/* The Close Button */
+.close {
+  color: #9e9e9e;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 

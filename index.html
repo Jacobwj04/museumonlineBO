@@ -13,19 +13,31 @@
             <div class="dropdown">
                 <button class="dropbtn">Menu</button>
                 <div class="dropdown-content">
-                  <a href="#">Maatregelen</a>
+                  <a class="adropdown" href="#">Maatregelen</a>
                   <a href="#">Gallerij</a>
                   <a href="#">Tour</a>
                 </div>
               </div>
             <a href="index.html">Home</a>
             <a href="">Tour</a>
-            <a href="">Foto's</a>
-            <a href="">Contact</a>
-            <a href="">EN</a>
-            <a href="">NL</a>
-            <a class="ticket" href="">Tickets</a>
+            <a href="#Foto's">Foto's</a>
+            <a href="#contact">Contact</a>
+            <a class="aEN" href="">EN</a>
+            <a class="aNL" href="">NL</a>
+            <!-- Trigger/Open The Modal -->
+            <a id="myBtn" class="ticket">Tickets</a>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>hier kan je tickest kopen</p>
+            </div>
+            </div>
         </nav>
+            </div>
     </header>
 
 <article>
@@ -35,12 +47,76 @@
         09:00 tot 17:00
         Maandag tot Zondag
     </p>
-    <img src="img/Vergeetmeniet.jpeg" alt="Het is een schilderij van een meisje verkleed in zwart" style="width: 400px;height:230px;">
+
+    <img class="imgwidth" src="img/Vergeetmeniet.jpeg" alt="Het is een schilderij van een meisje verkleed in zwart">
     <p>
         Het geschiedenis over het Rijkmuseum komt hier
     </p>
+        <!-- Slideshow container -->
+    <div id="Foto's" class="slideshow1">
+
+    <!-- Full-width images with number and caption text -->
+        <div class="slideshowSlides1 fadeslideshow1">
+            <div class="numbertextslideshow1">1 / 5</div>
+            <img src="imgslideshow1/slideshow1-1.jpg">
+            <p class="textslideshow1">Caption one</p>
+        </div>
+        
+        <div class="slideshowSlides1 fadeslideshow1">
+            <div class="numbertextslideshow1">2 / 5</div>
+            <img src="imgslideshow1/slideshow1-2.jpeg">
+            <p class="textslideshow1">Caption Two</p>
+        </div>
+        
+        <div class="slideshowSlides1 fadeslideshow1">
+            <div class="numbertextslideshow1">3 / 5</div>
+            <img src="imgslideshow1/slideshow1-3.jpg">
+            <p class="textslideshow1">Caption Three</p>
+        </div>
+    
+        <div class="slideshowSlides1 fadeslideshow1">
+            <div class="numbertextslideshow1">4 / 5</div>
+            <img src="imgslideshow1/slideshow1-4.jpg">
+            <p class="textslideshow1">Caption four</p>
+        </div>
+            
+        <div class="slideshowSlides1 fadeslideshow1">
+            <div class="numbertextslideshow1">5 / 5</div>
+            <img src="imgslideshow1/slideshow1-5.jpg">
+            <p class="textslideshow1">Caption five</p>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prevslideshow1" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="nextslideshow1" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dotslideshow1" onclick="currentSlide(1)"></span>
+        <span class="dotslideshow1" onclick="currentSlide(2)"></span>
+        <span class="dotslideshow1" onclick="currentSlide(3)"></span>
+        <span class="dotslideshow1" onclick="currentSlide(4)"></span>
+        <span class="dotslideshow1" onclick="currentSlide(5)"></span>
+        </div>
 
 </article>
-    
+    <script src="js.js"></script>
+    <footer>
+        <a id="contact" href="">Contact</a>
+    </footer>
 </body>
 </html>
+
+
+<button id="myBtn">Tickets</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+    <span class="close">&times;</span>
+    <p>hier kan je tickest kopen</p>
+</div>
