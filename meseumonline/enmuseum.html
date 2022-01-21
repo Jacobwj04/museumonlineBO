@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="Header-footerA" onclick="showModal(MaatregelM)">Restrictions</a>
+            <!-- The Modal -->
+            <div id="MaatregelM" class="colection1M">
+                <!-- Modal content -->
+                <div class="colection1MC">
+                    <div class="headercolection1M">
+                        <header class="headercolection1M">
+                            <h2>Covid-19 restrictions</h2>
+                            <span onclick=closeModal(MaatregelM) class="MaatregelMC">&times;</span>
+                        </header>
+                    </div>
+                    <p class="pcolection1M">
+                        The following conditions apply:<br>
+                        <br>
+                        If you’ve got symptoms, stay at home – even if you’ve been vaccinated<br>
+                        <br>
+                        If you are 13 or older you must be able to display a digital or printed Covid certificate QR
+                        code together with and ID-card or passport to enter the museum<br>
+                        <br>
+                        Bring your passport or identity card with you. A copy or photo is not valid<br>
+                        <br>
+                        <br>
+                        Book your visit in advance<br>
+                        <br>
+                        Give each other space: keep 1.5m distance<br>
+                        <br>
+                        Wearing a face mask is mandatory for everyone from 13 years and older<br>
+                    </p>
+                    <p class="pcolection1M">
+
+                    </p>
+                </div>
+            </div>
+            <a class="Header-footerA" href="">Tour</a>
+            <a class="Header-footerA" href="#Foto's">Foto's</a>
+            <a class="Header-footerA" href="#Collectie">Collection</a>
+            <a class="Header-footerA" onclick="showModal(ReviewsM)">Reviews</a>
+            <!-- The Modal -->
+            <div id="ReviewsM" class="colection1M">
+                <!-- Modal content -->
+                <div class="colection1MC">
+                    <div class="headercolection1M">
+                        <header class="headercolection1M">
+                            <h2>Reviews about the Rijksmuseum</h2>
+                            <span onclick=closeModal(ReviewsM) class="MaatregelMC">&times;</span>
+                        </header>
+                    </div>
+                    <img class="reviewimg1" src="/imgreview1/review.png" alt="">
+                    <p class="pcolection1M">
+                        17th century<br>
+                        Dec 2021<br>
+                        Great Musuem with some really nice paintings.<br>
+                        Specially if you like art from 16 to 18th. century. Dutch painter and some huge paintings<br>
+                    </p>
+                    <img class="reviewimg1" src="/imgreview1/review.png" alt="">
+                    <p class="pcolection1M">
+                        to do in Amsterdam<br>
+                        Dec 2021<br>
+                        very good musuem, giving a chance to better understand hollandese masters<br>
+                        Also nice surroundings with Van Gogh museum just beside<br>
+                    </p>
+                </div>
+            </div>
+            <a class="Header-footerA" href="#contact">Contact</a>
+            <a class="aEN" href="enmuseum.html">EN</a>
+            <a class="aNL" href="index.html">NL</a>
+            <a onclick="showModal(myModalticket)" class="ticket Header-footerA">Tickets</a>
+        </nav>
+    </header>
+    <!-- The Modal -->
+    <div id="myModalticket" class="colection1M">
+        <!-- Modal content -->
+        <div class="colection1MC">
+            <div class="headercolection1M">
+                <header class="headercolection1M">
+                    <h2>Tickets</h2>
+                    <span onclick=closeModal(myModalticket) class="ticketcloseM">&times;</span>
+                </header>
+            </div>
+            <div class="container-fluid mt-5">
+                <h2 class="mb-5 text-center">purchase tickts here</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="table-responsive">
+                            <table id="myTable" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Name</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th class="text-right">
+                                            <span id="amount" class="amount">Amount</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="product image">
+                                                <div class="img-prdct">
+                                                    <img src="imgticket/ticket1-1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="pticket">Adult</p>
+                                        </td>
+                                        <td>
+                                            <div class="button-container">
+                                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                <input type="text" name="qty" min="0" class="qty form-control"
+                                                    value="0">
+                                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" value="20" class="price form-control" disabled>
+                                        </td>
+                                        <td>€ <span id="amount" class="amount">0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product image">
+                                                <div class="img-prdct">
+                                                    <img src="imgticket/ticket1-2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="pticket">Ages 18 and under</p>
+                                        </td>
+                                        <td>
+                                            <div class="button-container">
+                                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                <input type="text" name="qty" min="0" class="qty form-control"
+                                                    value="0">
+                                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" value="0" class="price form-control" disabled>
+                                        </td>
+                                        <td>€ <span id="amount" class="amount">0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product image">
+                                                <div class="img-prdct">
+                                                    <img src="imgticket/ticket1-3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="pticket">Museum card</p>
+                                        </td>
+                                        <td>
+                                            <div class="button-container">
+                                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                <input type="text" name="qty" min="0" class="qty form-control"
+                                                    value="0">
+                                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" value="0" class="price form-control" disabled>
+                                        </td>
+                                        <td>€ <span id="amount" class="amount">0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product image">
+                                                <div class="img-prdct">
+                                                    <img src="imgticket/ticket1-4.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="pticket">EYCA card</p>
+                                        </td>
+                                        <td>
+                                            <div class="button-container">
+                                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                <input type="text" name="qty" min="0" class="qty form-control"
+                                                    value="0">
+                                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" value="10" class="price form-control" disabled>
+                                        </td>
+                                        <td>€ <span id="amount" class="amount">0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product image">
+                                                <div class="img-prdct">
+                                                    <img src="imgticket/ticket1-5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="pticket">I already have a ticket/voucher</p>
+                                        </td>
+                                        <td>
+                                            <div class="button-container">
+                                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                <input type="text" name="qty" min="0" class="qty form-control"
+                                                    value="0">
+                                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" value="0" class="price form-control" disabled>
+                                        </td>
+                                        <td>€ <span id="amount" class="amount">0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product image">
+                                                <div class="img-prdct">
+                                                    <img src="imgticket/ticket1-6.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="pticket">VriendenLoterij VIP card</p>
+                                        </td>
+                                        <td>
+                                            <div class="button-container">
+                                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                <input type="text" name="qty" min="0" class="qty form-control"
+                                                    value="0">
+                                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" value="0" class="price form-control" disabled>
+                                        </td>
+                                        <td>€ <span id="amount" class="amount">0</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4"></td>
+                                        <td>
+                                            <strong>Total = € <span id="total" class="total">0</span>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src="./js.js"></script>
+
+    <article>
+        <img src="img/front.png" alt="gallerij van verschillende schilderijen">
+        <div class="split left">
+            <h3 class="h3geschiedenis">
+                Opening hours
+                09:00 to 17:00
+                Monday to Sunday
+            </h3>
+
+            <img class="left img" src="img/side1-1.jpg" alt="Het is een schilderij van een meisje verkleed in zwart">
+            <h1 class="h1geschiedenis">The history of the Rijksmeseum</h1>
+            <h3 class="h3geschiedenis">
+                How it started
+            </h3>
+            <p class="Pgeschiedenis">
+                On 19 November 1798 the government decided to establish a national museum on the French model.
+                Intended as a ‘prestige project’ to inspire patriotic feeling,
+                it would also offer a place to store important objects.
+                This National Art Gallery first opened its doors on 31 May 1800 in Huis Ten Bosch in The Hague.
+                It brought together more than 200 paintings and historical objects from both the stadtholders’
+                collections and national institutions (some defunct) like the Dutch East India Company.
+                The first purchase – The Swan by Jan Asselijn – cost 100 guilders and is one of the Rijksmuseum’s top
+                attractions to this day.
+            </p>
+            <h3 class="h3geschiedenis">
+                The Rijksmeseum
+            </h3>
+            <p class="Pgeschiedenis">
+                After King Willem I came to the throne in 1813,
+                the museum and the national print collection from The Hague were both relocated to Trippenhuis, a
+                17th-century city palace situated on Kloveniersburgwal.
+                It was christened the ‘Rijks Museum’, or ‘national museum’.
+                Soon, however, a number of the collections were removed to other locations – much to the director’s
+                dismay.
+                Objects from Classical Antiquity went to a new Museum of Antiquities in Leiden and applied arts and
+                crafts to a recently formed Cabinet of Rarities in The Hague.
+                In 1838 a separate museum was created in Paviljoen Welgelegen in Haarlem to house modern, 19th-century
+                art.
+                By contrast with the Napoleonic period, the Rijks Museum during this time received few major works.
+            </p>
+            <h1 class="h1colection">
+                Collection from the Rijksmeseum
+            </h1>
+            <!-- Slideshow container -->
+            <div id="Collectie" class="colectioncont1">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="colection1slides colection1fade">
+                    <div class="colection1numbertext">Click image for more information</div>
+                    <img onclick="showModal(colection11)" src="imgcolection1/colection1-1.jpg"
+                        alt="Het is een schilderij van een witte swaan">
+                    <!-- The Modal -->
+                    <div id="colection11" class="colection1M">
+                        <!-- Modal content -->
+                        <div class="colection1MC">
+                            <div class="headercolection1M">
+                                <header class="headercolection1M">
+                                    <h2>The Threatened Swan, Jan Asselijn, c. 1650</h2>
+                                    <span onclick="closeModal(colection11)" class="colection1closeM">&times;</span>
+                                </header>
+                            </div>
+                            <img src="/imgcolection1/colection1-1.jpg" alt="">
+                            <h3 class="h3colectionM">The story of the painting</h3>
+                            <p class="pcolection1M">
+                                EA swan fiercely defends its nest against a dog.
+                                In later centuries this scuffle was interpreted as a political allegory:
+                                the white swan was thought to symbolize the Dutch statesman Johan de Witt (assassinated
+                                in 1672) protecting the country from its enemies.
+                                This was the meaning attached to the painting when it became the very first
+                                acquisition to enter the Nationale Kunstgalerij (the forerunner of the Rijksmuseum) in
+                                1880.
+                            </p>
+                            <h3 class="h3colectionM">Jan Asselijn</h3>
+                            <p class="pcolection1M">
+                                Born in the year 1600 <br>
+                                Died in the year 1652<br>
+                                Most active in the years 1632-1652<br>
+                                Country of birth: Netherland
+                            </p>
+                        </div>
+                    </div>
+                    <p class="colection1text">Caption one</p>
+                </div>
+
+                <div class="colection1slides colection1fade">
+                    <div class="colection1numbertext">Click image for more information</div>
+                    <img onclick="showModal(colection12)" src="imgcolection1/colection1-2.jpg"
+                        alt="het is een schilderij van een meisje in een komono">
+                    <!-- The Modal -->
+                    <div id="colection12" class="colection1M">
+                        <!-- Modal content -->
+                        <div class="colection1MC">
+                            <div class="headercolection1M">
+                                <header class="headercolection1M">
+                                    <h2>Girl in a White Kimono, George Hendrik Breitner, 1894</h2>
+                                    <span onclick=closeModal(colection12) class="colection1closeM">&times;</span>
+                                </header>
+                            </div>
+                            <img src="/imgcolection1/colection1-2.jpg" alt="">
+                            <h3 class="h3colectionM">The story of the painting</h3>
+                            <p class="pcolection1M">
+                                Inspired by Japanese prints, between 1893 and 1896 Breitner made thirteen paintings of a
+                                girl in a kimono.
+                                She assumes different poses and the kimono often has a different colour.
+                                What catches the eye here is the embroidered, white silk kimono with red-trimmed sleeves
+                                and an orange sash.
+                                The dreamy girl is sixteenyear-old Geesje Kwak, a seamstress and one of Breitner’s
+                                regular models.
+                            </p>
+                            <h3 class="h3colectionM">George Hendrik Breitner</h3>
+                            <p class="pcolection1M">
+                                Born in Rotterdam on 12 september 1857<br>
+                                Died in Amsterdam on 5 juni 1923<br>
+                                Country of birth: Netherland
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="colection1slides colection1fade">
+                    <div class="colection1numbertext">Click image for more information</div>
+                    <img onclick="showModal(colection13)" src="imgcolection1/colection1-3.jpg"
+                        alt="het is een schilderij die heet nachtwacht er staat veel mensen op het schilderij">
+                    <!-- The Modal -->
+                    <div id="colection13" class="colection1M">
+                        <!-- Modal content -->
+                        <div class="colection1MC">
+                            <div class="headercolection1M">
+                                <header class="headercolection1M">
+                                    <h2>The Night Watch, Rembrandt van Rijn, 1642</h2>
+                                    <span onclick=closeModal(colection13) class="colection1closeM">&times;</span>
+                                </header>
+                            </div>
+                            <img src="/imgcolection1/colection1-3.jpg" alt="">
+                            <h3 class="h3colectionM">The story of the painting</h3>
+                            <p class="pcolection1M">
+                                Rembrandt's largest and most famous painting was made for one of the three headquarters
+                                of Amsterdam's civic guard.
+                                These groups of civilian soldiers defended the city from attack.
+                                Rembrandt was the first to paint all of the figures in a civic guard piece in action.
+                                The captain, dressed in black, gives the order to march out. The guardsmen are getting
+                                into formation.
+                                Rembrandt used the light to focus on particular details, like the captain's gesturing
+                                hand and the young girl in the foreground.
+                                She was the company mascot. The nickname Night Watch originated much later, when the
+                                painting was thought to represent a nocturnal scene.
+                            </p>
+                            <h3 class="h3colectionM">Rembrandt van Rijn</h3>
+                            <p class="pcolection1M">
+                                Born in Harmenszoon van Rijn 15 july 1606<br>
+                                Died 4 October 1669
+                            </p>
+                        </div>
+                    </div>
+                    <p class="colection1text">Caption Three</p>
+                </div>
+
+                <div class="colection1slides colection1fade">
+                    <div class="colection1numbertext">Click image for more information</div>
+                    <img onclick="showModal(colection14)" src="imgcolection1/colection1-4.jpg"
+                        alt="Het is een schilderij van het burgeroorlog in 1786 tot 1787">
+                    <!-- The Modal -->
+                    <div id="colection14" class="colection1M">
+                        <!-- Modal content -->
+                        <div class="colection1MC">
+                            <div class="headercolection1M">
+                                <header class="headercolection1M1-2">
+                                    <h2>Exchange of Fire on the Vaartse Rijn near Jutphaas, Jonas Zeuner, 1787 - 1788
+                                    </h2>
+                                    <span onclick=closeModal(colection14) class="colection1closeM">&times;</span>
+                                </header>
+                            </div>
+                            <img src="/imgcolection1/colection1-4.jpg" alt="">
+                            <h3 class="h3colectionM">The story of the painting</h3>
+                            <p class="pcolection1M">
+                                A civil war between Orangists and Patriots raged in the Dutch Republic during 1786 and
+                                1787.
+                                In May 1787, the Stadtholder’s army tried to cut off the city of Utrecht, which was in
+                                the hands of the Patriots,
+                                from the neighbouring Patriot-held province of Holland. The Patriots succeeded in
+                                repelling the attack on 9 May.
+                                Seen at left are the Stadtholder’s troops and at the right the Utrecht Patriots.
+                            </p>
+                            <h3 class="h3colectionM">Jutphaas, Jonas Zeuner</h3>
+                            <p class="pcolection1M">
+                                Born 1727<br>
+                                Died 1814<br>
+                                He painted 170 paintings
+                            </p>
+                        </div>
+                    </div>
+                    <p class="colection1text">Caption four</p>
+                </div>
+
+                <div class="colection1slides colection1fade">
+                    <div class="colection1numbertext">Click image for more information</div>
+                    <img onclick="showModal(colection15)" src="imgcolection1/colection1-5.jpg"
+                        alt="het is een schilderij van schipbreuk op een rotsachtige kust">
+                    <!-- The Modal -->
+                    <div id="colection15" class="colection1M">
+                        <!-- Modal content -->
+                        <div class="colection1MC">
+                            <div class="headercolection1M">
+                                <header class="headercolection1M">
+                                    <h2>Shipwreck off a Rocky Coast, Wijnand Nuijen, c. 1837</h2>
+                                    <span onclick=closeModal(colection15) class="colection1closeM">&times;</span>
+                                </header>
+                            </div>
+                            <img src="/imgcolection1/colection1-5.jpg" alt="">
+                            <h3 class="h3colectionM">The story of the painting</h3>
+                            <p class="pcolection1M">
+                                This painting is a highlight of Dutch Romanticism.
+                                It represents the insignificance of man in the face of nature.
+                                During a storm, a three-master has struck a rock and foundered.
+                                The crew desperately combs the beach in search of survivors.
+                                Rays of sun pierce through the gloomy sky and afford a view of the overwhelming sheer
+                                cliffs, which make the people seem even smaller.
+                            </p>
+                            <h3 class="h3colectionM">Wijnand Nuijen</h3>
+                            <p class="pcolection1M">
+                                Born in Den Haag 4 maart 1813<br>
+                                Died in Den Haag 2 juni 1839<br>
+                                Country of birth: Netherland
+                            </p>
+                        </div>
+                    </div>
+                    <p class="colection1text">Caption five</p>
+                </div>
+
+                <div class="colection1slides colection1fade">
+                    <div class="colection1numbertext">Click image for more information</div>
+                    <img onclick="showModal(colection16)" src="imgcolection1/colection1-6.jpg"
+                        alt="het is een schilderij van een klein waterval met bomen">
+                    <!-- The Modal -->
+                    <div id="colection16" class="colection1M">
+                        <!-- Modal content -->
+                        <div class="colection1MC">
+                            <div class="headercolection1M">
+                                <header class="headercolection1M">
+                                    <h2>Landscape with Waterfall, Jacob Isaacksz van Ruisdael, c. 1668</h2>
+                                    <span onclick=closeModal(colection16) class="colection1closeM">&times;</span>
+                                </header>
+                            </div>
+                            <img src="/imgcolection1/colection1-6.jpg" alt="">
+                            <h3 class="h3colectionM">The story of the painting</h3>
+                            <p class="pcolection1M">
+                                The tiny figures in this grand landscape with a rushing waterfall are almost lost.
+                                The composition is dominated by gnarled trees, barren tree trunks, and roiling water.
+                                The dramatic cycle of nature’s birth and decay is almost tangible.
+                                A church tower rises up in the distance like a beacon of peace.
+                            </p>
+                            <h3 class="h3colectionM">Jacob Isaacksz van Ruisdael</h3>
+                            <p class="pcolection1M">
+                                Born in 1628 of 1629<br>
+                                Country of birth: Netherland<br>
+                                Died: 10 maart 1682
+                            </p>
+                        </div>
+                    </div>
+                    <p class="colection1text">Caption five</p>
+                </div>
+
+                <div class="colection1slides colection1fade">
+                    <div class="colection1numbertext">Click image for more information</div>
+                    <img onclick="showModal(colection17)" src="imgcolection1/colection1-7.jpg"
+                        alt="het is een schilderij van een Suriname Plantage">
+                    <!-- The Modal -->
+                    <div id="colection17" class="colection1M">
+                        <!-- Modal content -->
+                        <div class="colection1MC">
+                            <div class="headercolection1M">
+                                <header class="headercolection1M">
+                                    <h2>Plantation in Suriname, Dirk Valkenburg, 1707</h2>
+                                    <span onclick=closeModal(colection17) class="colection1closeM">&times;</span>
+                                </header>
+                            </div>
+                            <img src="/imgcolection1/colection1-7.jpg" alt="">
+                            <h3 class="h3colectionM">The story of the painting</h3>
+                            <p class="pcolection1M">
+                                The painter Dirk Valkenburg spent several years in Suriname at the plantations of the
+                                Amsterdam merchant Jonas Witsen,
+                                who commissioned him to paint this scene of an orange plantation.
+                                Several Indians – the original inhabitants of this territory – appear among the palm
+                                trees in the foreground,
+                                while the plantation owner’s residence can be glimpsed in the background.
+                            </p>
+                            <h3 class="h3colectionM">Dirk Valkenburg</h3>
+                            <p class="pcolection1M">
+                                Born in Amsterdam 17 februari 1675<br>
+                                Died on the 2 februari 1721<br>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="colection1text">Caption five</p>
+                </div>
+
+                <div class="colection1slides colection1fade">
+                    <div class="colection1numbertext">Click image for more information</div>
+                    <img onclick="showModal(colection18)" src="/imgcolection1/colection1-8.jpg"
+                        alt="het is een schilderij van een bos met rotsen">
+                    <!-- The Modal -->
+                    <div id="colection18" class="colection1M">
+                        <!-- Modal content -->
+                        <div class="colection1MC">
+                            <div class="headercolection1M1-2">
+                                <header class="headercolection1M1-2">
+                                    <h2>Forest view near Barbizon, Johan Hendrik Weissenbruch, 1900</h2>
+                                    <span onclick=closeModal(colection18) class="colection1closeM">&times;</span>
+                                </header>
+                            </div>
+                            <img src="/imgcolection1/colection1-8.jpg" alt="">
+                            <h3 class="h3colectionM">The story of the painting</h3>
+                            <p class="pcolection1M">
+                                The Barbizon artists' colony was located near the forest of Fontainebleau,
+                                southeast of Paris. The Barbizon painters were a major influence on the Hague School.
+                                That's why Weissenbruch made his only foreign trip – he was 76 years old! – a pilgrimage
+                                to this place.
+                                He painted the characteristic birch forest, in which a painter is sketching leaning
+                                against a boulder.
+                            </p>
+                            <h3 class="h3colectionM">Johan Hendrik Weissenbruch</h3>
+                            <p class="pcolection1M">
+                                Born in Den Haag 19 juni 1824<br>
+                                Died in Den Haag 24 maart 1903<br>
+                                Country of birth: Netherland
+                            </p>
+                        </div>
+                    </div>
+                    <p class="colection1text">Caption five</p>
+                </div>
+
+                <div class="colection1slides colection1fade">
+                    <div class="colection1numbertext">Click image for more information</div>
+                    <img onclick="showModal(colection19)" src="imgcolection1/colection1-9.jpg"
+                        alt="het is een schilderij van een bloemen pot met veel kleuren">
+                    <!-- The Modal -->
+                    <div id="colection19" class="colection1M">
+                        <!-- Modal content -->
+                        <div class="colection1MC">
+                            <div class="headercolection1M">
+                                <header class="headercolection1M">
+                                    <h2>SStill Life with Flowers, Jan van Huysum, 1723</h2>
+                                    <span onclick=closeModal(colection19) class="colection1closeM">&times;</span>
+                                </header>
+                            </div>
+                            <img src="/imgcolection1/colection1-9.jpg" alt="">
+                            <h3 class="h3colectionM">The story of the painting</h3>
+                            <p class="pcolection1M">
+                                In the 18th century, Van Huysum brought the extremely popular genre of flower painting
+                                to great heights.
+                                Instead of the usual dark background, he used a light one with a park landscape,
+                                creating the impression that the flowers are set out-of-doors on a balustrade.
+                                The décor here consists of a statue of Flora, the goddess of flowers, some cursorily
+                                painted foliage and a pond.
+                            </p>
+                            <h3 class="h3colectionM">Jan van Huysum</h3>
+                            <p class="pcolection1M">
+                                Born in Amsterdam 15 april 1682<br>
+                                Died in Amsterdam 8 februari 1749<br>
+                                Country of birth: Netherland
+                            </p>
+                        </div>
+                    </div>
+                    <p class="colection1text">Caption five</p>
+                </div>
+
+                <div class="colection1slides colection1fade">
+                    <div class="colection1numbertext">Click image for more information</div>
+                    <img onclick="showModal(colection110)" src="/imgcolection1/colection1-10.jpg"
+                        alt="Het is een schilderij van Napoleon">
+                    <!-- The Modal -->
+                    <div id="colection110" class="colection1M">
+                        <!-- Modal content -->
+                        <div class="colection1MC">
+                            <div class="headercolection1M">
+                                <header class="headercolection1M">
+                                    <h2>Portrait of Louis Napoleon, King of Holland, Charles Howard Hodges, 1809</h2>
+                                    <span onclick=closeModal(colection110) class="colection1closeM">&times;</span>
+                                </header>
+                            </div>
+                            <img src="/imgcolection1/colection1-10.jpg" alt="">
+                            <h3 class="h3colectionM">The story of the painting</h3>
+                            <p class="pcolection1M">
+                                n 1795 French troops invaded the Netherlands.
+                                The country became an ally of France and enjoyed a large degree of independence,
+                                until 1806 when Napoleon seized power and made his brother Louis Napoleon King of
+                                Holland.
+                                Louis showed sympathy for his new kingdom and supported Dutch interests.
+                                This had not been Napoleon’s intention and in 1810 he forced his brother to abdicate.
+                            </p>
+                            <h3 class="h3colectionM">Charles Howard Hodges</h3>
+                            <p class="pcolection1M">
+                                Borrn in London 23 juli 1764<br>
+                                Died in Amsterdam 24 juli 1837<br>
+                                Country of birth: England
+                            </p>
+                        </div>
+                    </div>
+                    <p class="colection1text">Caption five</p>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="colection1prev" onclick="colectionPlusSlides(-1)">&#10094;</a>
+                <a class="colection1next" onclick="colectionPlusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="colection1dot" onclick="colectionCurrentSlide(1)"></span>
+                <span class="colection1dot" onclick="colectionCurrentSlide(2)"></span>
+                <span class="colection1dot" onclick="colectionCurrentSlide(3)"></span>
+                <span class="colection1dot" onclick="colectionCurrentSlide(4)"></span>
+                <span class="colection1dot" onclick="colectionCurrentSlide(5)"></span>
+                <span class="colection1dot" onclick="colectionCurrentSlide(6)"></span>
+                <span class="colection1dot" onclick="colectionCurrentSlide(7)"></span>
+                <span class="colection1dot" onclick="colectionCurrentSlide(8)"></span>
+                <span class="colection1dot" onclick="colectionCurrentSlide(9)"></span>
+                <span class="colection1dot" onclick="colectionCurrentSlide(10)"></span>
+            </div>
+        </div>
+        <div class="split right">
+            <h3 class="h3geschiedenis">Exhibition</h3>
+            <!-- Slideshow container -->
+            <div class="exhibitioncont1">
+                <!-- Full-width images with number and caption text -->
+                <div class="exhibition1slides exhibition1fade">
+                    <p class="exhibition1numbertext">Click image for more information</p>
+                    <img onclick="showModal(exhibition1)" src="imgexhibition1/exhibition1-1.jpg"
+                        alt="een vrouw verkleed in zwart en het lijkt dat bijna aan het huilen is">
+                    <!-- The Modal -->
+                    <div id="exhibition1" class="colection1M">
+                        <!-- Modal content -->
+                        <div class="colection1MC">
+                            <div class="headercolection1M">
+                                <header class="headercolection1M">
+                                    <h2>Exhibition</h2>
+                                    <span onclick=closeModal(exhibition1) class="MaatregelMC">&times;</span>
+                                </header>
+                            </div>
+                            <h3 class="h3colectionM">The story of the painting</h3>
+                            <p class="pcolection1M">
+                                Thanks to the outstanding loans made possible by Ammodo, Dutch and international exhibition-goers can experience paintings, 
+                                sculpture and other artistic treasures rarely or never before shown in the Netherlands. 
+                                In this way, Ammodo supports not only the Rijksmuseum but also the development of art and culture throughout the country.
+                            </p>
+                            <h3 class="h3colectionM">The story of the painting</h3>
+                            <p class="pcolection1M">
+                                The first real bloom of the portrait in Europe began around 1500. 
+                                Powerful emperors, flamboyant aristocrats and wealthy citizens; 
+                                more and more people had themselves immortalized in the 15th and 16th centuries. 
+                                With more than 100 portraits, this exhibition shows how these people portrayed themselves, 
+                                of course in the best possible way. On loan from museums from all over Europe and the United States, 
+                                the exhibition brings together international masterpieces by famous artists such as Holbein, Dürer, Memling and Titian. 
+                                One of the highlights is Petrus Christus's Portrait of a Young Woman (c. 1470), 
+                                which is being loaned to a museum by the Gemäldegalerie in Berlin for the first time in nearly thirty years.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="exhibition1text">vergeet me niet</p>
+                    <span class="exhibition1dot" onclick="exhibitionCurrentSlide(1)"></span>
+                </div>
+            </div>
+            <h3 class="h3geschiedenis">Foto's</h3>
+            <!-- Slideshow container -->
+            <div id="Foto's" class="slideshow1">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="slideshowSlides1 fadeslideshow1">
+                    <div class="numbertextslideshow1">1 / 5</div>
+                    <img src="imgslideshow1/slideshow1-1.jpg"
+                        alt="Het is een schilderij waarop een meisje de fluit speelt">
+                    <p class="textslideshow1">Caption one</p>
+                </div>
+
+                <div class="slideshowSlides1 fadeslideshow1">
+                    <div class="numbertextslideshow1">2 / 5</div>
+                    <img src="imgslideshow1/slideshow1-2.jpeg"
+                        alt="Het is een schilderij waarop je ziet een vrouw met een groet hoed">
+                    <p class="textslideshow1">Caption Two</p>
+                </div>
+
+                <div class="slideshowSlides1 fadeslideshow1">
+                    <div class="numbertextslideshow1">3 / 5</div>
+                    <img src="imgslideshow1/slideshow1-3.jpg" alt="het is een schilderij van een meisje in een komono">
+                    <p class="textslideshow1">Caption Three</p>
+                </div>
+
+                <div class="slideshowSlides1 fadeslideshow1">
+                    <div class="numbertextslideshow1">4 / 5</div>
+                    <img src="imgslideshow1/slideshow1-4.jpg" alt="Het is een kustwerk waarop een man ziet te gillen">
+                    <p class="textslideshow1">Caption four</p>
+                </div>
+
+                <div class="slideshowSlides1 fadeslideshow1">
+                    <div class="numbertextslideshow1">5 / 5</div>
+                    <img src="imgslideshow1/slideshow1-5.jpg"
+                        alt="Het is een schilderij waarop je ziet een meisje verkleed in geel en bluaw en ziet verdrietig uit">
+                    <p class="textslideshow1">Caption five</p>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prevslideshow1" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nextslideshow1" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dotslideshow1" onclick="currentSlide(1)"></span>
+                <span class="dotslideshow1" onclick="currentSlide(2)"></span>
+                <span class="dotslideshow1" onclick="currentSlide(3)"></span>
+                <span class="dotslideshow1" onclick="currentSlide(4)"></span>
+                <span class="dotslideshow1" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </article>
+    <script src="js.js"></script>
+    <footer>
+        <div class="splitfooter leftfooter">
+            <a class="contact" id="contact" href="#">Contact</a>
+            <a class="contact" onclick="showModal(Meercontact1)">More contacts</a>
+            <!-- The Modal -->
+            <div id="Meercontact1" class="colection1M">
+                <!-- Modal content -->
+                <div class="colection1MC">
+                    <div class="headercolection1M">
+                        <header class="headercolection1M">
+                            <h2>Meer contact informatie</h2>
+                            <span onclick=closeModal(Meercontact1) class="meercontactMC">&times;</span>
+                        </header>
+                    </div>
+                    <p class="pcolection1M">
+                        Rijksmuseum Amsterdam<br>
+                        Postbus 74888<br>
+                        1070 DN Amsterdam<br>
+                        E-mail: info@rijksmuseum.nl<br>
+                        Telefoonnummer: +31 0 20 6747 000<br>
+                        <br>
+                        Bezoekadres<br>
+                        Museumstraat 1<br>
+                        1071 XX Amsterdam<br>
+                        <br>
+                        Vestigingsadres<br>
+                        Hobbemastraat 20<br>
+                        1071 ZC Amsterdam<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="splitfooter rightfooter">
+            <a class="asocail" href="https://www.instagram.com/rijksmuseum/">
+                <img src="imgsocial/instagram.svg" alt="Instagramlogo" class="istagramimg">
+            </a>
+            <a class="asocail" href="https://www.facebook.com/rijksmuseum/">
+                <img src="imgsocial/Facebook.svg" alt="Facebooklogo" class="facebookimg">
+            </a>
+            <a class="asocail" href="https://www.youtube.com/channel/UCEXuPfYt1M3e8DT1LDeSfVg">
+                <img src="imgsocial/youtube.svg" alt="Youtubelogo" class="youtubeimg">
+            </a>
+            <a class="asocail" href="https://twitter.com/rijksmuseum">
+                <img src="imgsocial/twitter.svg" alt="Twitterlogo" class="twitterimg">
+            </a>
+            <a class="asocail" href="https://www.tiktok.com/@rijksmuseum">
+                <img src="imgsocial/tiktok.svg" alt="Tiktoklogo" class="tiktokimg">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

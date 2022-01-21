@@ -85,6 +85,9 @@ function colectionSlides(n) {
   colectionDots[slideColectionIndex-1].className += " colection1active";
 }
 
+
+
+
 function showModal(name) {
   var modalname = name;
   modalname.style.display = "block";
@@ -101,6 +104,9 @@ function closeModal(name) {
   var modalname = name;
   modalname.style.display = "none";
   };
+
+
+
 
   $(document).ready(function(){
     update_amounts();

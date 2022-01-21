@@ -1,0 +1,68 @@
+    <h1 class="h3geschiedenis">Tentoonstellingen</h1>
+    </div>
+    <!-- Slideshow container -->
+    <div class="exhibitioncont1">
+    <!-- Full-width images with number and caption text -->
+        <div class="exhibition1slides exhibition1fade">
+            <p class="exhibition1numbertext">klik afbeelding voor informatie</p>
+            <img onclick="showModal(exhibition1)" src="imgexhibition1/exhibition1-1.jpg">
+            <!-- The Modal -->
+            <div id="exhibition1" class="modal1-ticket">
+            <!-- Modal content -->
+            <div class="modal1-ticketcon">
+                <span onclick=closeModal(exhibition1) class="modal1-close">&times;</span>
+                <p>hi</p>
+            </div>
+            </div>
+            <p class="exhibition1text">vergeet me niet</p>
+        <span class="exhibition1dot" onclick="exhibitionCurrentSlide(1)"></span>
+    </div>
+    </div>
+        <!-- Slideshow container -->
+    <div id="Foto's" class="slideshow1">
+
+    <!-- Full-width images with number and caption text -->
+        <div class="slideshowSlides1 fadeslideshow1">
+            <div class="numbertextslideshow1">1 / 5</div>
+            <img src="imgslideshow1/slideshow1-1.jpg">
+            <p class="textslideshow1">Caption one</p>
+        </div>
+        
+        <div class="slideshowSlides1 fadeslideshow1">
+            <div class="numbertextslideshow1">2 / 5</div>
+            <img src="imgslideshow1/slideshow1-2.jpeg">
+            <p class="textslideshow1">Caption Two</p>
+        </div>
+        
+        <div class="slideshowSlides1 fadeslideshow1">
+            <div class="numbertextslideshow1">3 / 5</div>
+            <img src="imgslideshow1/slideshow1-3.jpg">
+            <p class="textslideshow1">Caption Three</p>
+        </div>
+
+        <div class="slideshowSlides1 fadeslideshow1">
+            <div class="numbertextslideshow1">4 / 5</div>
+            <img src="imgslideshow1/slideshow1-4.jpg">
+            <p class="textslideshow1">Caption four</p>
+        </div>
+            
+        <div class="slideshowSlides1 fadeslideshow1">
+            <div class="numbertextslideshow1">5 / 5</div>
+            <img src="imgslideshow1/slideshow1-5.jpg">
+            <p class="textslideshow1">Caption five</p>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prevslideshow1" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="nextslideshow1" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dotslideshow1" onclick="currentSlide(1)"></span>
+        <span class="dotslideshow1" onclick="currentSlide(2)"></span>
+        <span class="dotslideshow1" onclick="currentSlide(3)"></span>
+        <span class="dotslideshow1" onclick="currentSlide(4)"></span>
+        <span class="dotslideshow1" onclick="currentSlide(5)"></span>
+        </div>
