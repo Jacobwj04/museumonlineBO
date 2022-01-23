@@ -1,264 +1,132 @@
-<header>
-    <nav>
-        <div class="split left">
-            <a class="Header-footerA" onclick="showModal(MaatregelM)">Restrictions</a>
+<div class="split right">
+    <h3 class="h3geschiedenis">Tentoonstellingen</h3>
+    <!-- Slideshow container -->
+    <div class="exhibitioncont1">
+        <!-- Full-width images with number and caption text -->
+        <div class="exhibition1slides exhibition1fade">
+            <p class="exhibition1numbertext">klik afbeelding voor informatie</p>
+            <img onclick="showModal(exhibition1)" src="imgexhibition1/exhibition1-1.jpg"
+                alt="een vrouw verkleed in zwart en het lijkt dat bijna aan het huilen is">
             <!-- The Modal -->
-            <div id="MaatregelM" class="colection1M">
+            <div id="exhibition1" class="colection1M">
                 <!-- Modal content -->
                 <div class="colection1MC">
                     <div class="headercolection1M">
                         <header class="headercolection1M">
-                            <h2>Covid-19 restrictions</h2>
-                            <span onclick=closeModal(MaatregelM) class="MaatregelMC">&times;</span>
+                            <h2>tentoonstelling</h2>
+                            <span onclick=closeModal(exhibition1) class="MaatregelMC">&times;</span>
                         </header>
                     </div>
+                    <h3 class="h3colectionM">The story of the painting</h3>
                     <p class="pcolection1M">
-                        The following conditions apply:<br>
-                        <br>
-                        If you’ve got symptoms, stay at home – even if you’ve been vaccinated<br>
-                        <br>
-                        If you are 13 or older you must be able to display a digital or printed Covid certificate QR
-                        code together with and ID-card or passport to enter the museum<br>
-                        <br>
-                        Bring your passport or identity card with you. A copy or photo is not valid<br>
-                        <br>
-                        <br>
-                        Book your visit in advance<br>
-                        <br>
-                        Give each other space: keep 1.5m distance<br>
-                        <br>
-                        Wearing a face mask is mandatory for everyone from 13 years and older<br>
+                        Dankzij de uitstaande bruiklenen die mogelijk zijn gemaakt door Ammodo, kunnen
+                        Nederlandse en internationale tentoonstellingsbezoekers schilderijen,
+                        beeldhouwkunst en andere kunstschatten zelden of nooit eerder in Nederland getoond.
+                        Zo ondersteunt Ammodo niet alleen het Rijksmuseum maar ook de ontwikkeling van kunst en
+                        cultuur in het hele land.
                     </p>
+                    <h3 class="h3colectionM">Charles Howard Hodges</h3>
                     <p class="pcolection1M">
+                        Rond 1500 begon de eerste echte bloei van het portret in Europa.
+                        Machtige keizers, flamboyante aristocraten en welgestelde burgers;
+                        steeds meer mensen lieten zich in de 15de en 16de eeuw vereeuwigen.
+                        Met meer dan 100 portretten toont deze tentoonstelling hoe die geportretteerden zich,
+                        uiteraard zo gunstig mogelijk,
+                        lieten afbeelden. Door middel van bruiklenen van musea uit heel Europa en de Verenigde
+                        Staten
+                        komen in de tentoonstelling internationale topstukken bijeen van beroemde kunstenaars
+                        als Holbein,
+                        Dürer, Memling en Titiaan.
+                        Een van de hoogtepunten is Petrus Christus’
+                        Portret van een jonge vrouw (ca. 1470), dat voor het eerst in bijna dertig jaar door de
+                        Gemäldegalerie in Berlijn aan een museum wordt uitgeleend.
+                    </p>
+                </div>
+            </div>
+            <h3 class="h3geschiedenis">Foto's</h3>
+            <!-- Slideshow container -->
+            <div id="Foto's" class="slideshow1">
 
-                    </p>
+                <!-- Full-width images with number and caption text -->
+                <div class="slideshowSlides1 fadeslideshow1">
+                    <div class="numbertextslideshow1">1 / 5</div>
+                    <img src="imgslideshow1/slideshow1-1.jpg"
+                        alt="Het is een schilderij waarop een meisje de fluit speelt">
+                    <p class="textslideshow1">Caption one</p>
                 </div>
+
+                <div class="slideshowSlides1 fadeslideshow1">
+                    <div class="numbertextslideshow1">2 / 5</div>
+                    <img src="imgslideshow1/slideshow1-2.jpeg"
+                        alt="Het is een schilderij waarop je ziet een vrouw met een groet hoed">
+                    <p class="textslideshow1">Caption Two</p>
+                </div>
+
+                <div class="slideshowSlides1 fadeslideshow1">
+                    <div class="numbertextslideshow1">3 / 5</div>
+                    <img src="imgslideshow1/slideshow1-3.jpg" alt="het is een schilderij van een meisje in een komono">
+                    <p class="textslideshow1">Caption Three</p>
+                </div>
+
+                <div class="slideshowSlides1 fadeslideshow1">
+                    <div class="numbertextslideshow1">4 / 5</div>
+                    <img src="imgslideshow1/slideshow1-4.jpg" alt="Het is een kustwerk waarop een man ziet te gillen">
+                    <p class="textslideshow1">Caption four</p>
+                </div>
+
+                <div class="slideshowSlides1 fadeslideshow1">
+                    <div class="numbertextslideshow1">5 / 5</div>
+                    <img src="imgslideshow1/slideshow1-5.jpg"
+                        alt="Het is een schilderij waarop je ziet een meisje verkleed in geel en bluaw en ziet verdrietig uit">
+                    <p class="textslideshow1">Caption five</p>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prevslideshow1" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nextslideshow1" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <a class="Header-footerA" href="">Tour</a>
-            <a class="Header-footerA" href="#Foto's">Foto's</a>
-            <a class="Header-footerA" href="#Collectie">Collection</a>
-            <a class="Header-footerA" onclick="showModal(ReviewsM)">Reviews</a>
-            <!-- The Modal -->
-            <div id="ReviewsM" class="colection1M">
-                <!-- Modal content -->
-                <div class="colection1MC">
-                    <div class="headercolection1M">
-                        <header class="headercolection1M">
-                            <h2>Reviews about the Rijksmuseum</h2>
-                            <span onclick=closeModal(ReviewsM) class="MaatregelMC">&times;</span>
-                        </header>
-                    </div>
-                    <img class="reviewimg1" src="/imgreview1/review.png" alt="">
-                    <p class="pcolection1M">
-                        17th century<br>
-                        Dec 2021<br>
-                        Great Musuem with some really nice paintings.<br>
-                        Specially if you like art from 16 to 18th. century. Dutch painter and some huge paintings<br>
-                    </p>
-                    <img class="reviewimg1" src="/imgreview1/review.png" alt="">
-                    <p class="pcolection1M">
-                        to do in Amsterdam<br>
-                        Dec 2021<br>
-                        very good musuem, giving a chance to better understand hollandese masters<br>
-                        Also nice surroundings with Van Gogh museum just beside<br>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="split right">
-            <a class="Header-footerA" href="#contact">Contact</a>
-            <a class="aEN" href="enmuseum.html">EN</a>
-            <a class="aNL" href="index.html">NL</a>
-            <a onclick="showModal(myModalticket)" class="ticket Header-footerA">Tickets</a>
-        </div>
-    </nav>
-</header>
-<!-- The Modal -->
-<div id="myModalticket" class="colection1M">
-    <!-- Modal content -->
-    <div class="colection1MC">
-        <div class="headercolection1M">
-            <header class="headercolection1M">
-                <h2>Tickets</h2>
-                <span onclick=closeModal(myModalticket) class="ticketcloseM">&times;</span>
-            </header>
-        </div>
-        <div class="container-fluid mt-5">
-            <h2 class="mb-5 text-center">purchase tickts here</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="table-responsive">
-                        <table id="myTable" class="table">
-                            <thead>
-                                <tr>
-                                    <th>Product</th>
-                                    <th>Name</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
-                                    <th class="text-right">
-                                        <span id="amount" class="amount">Amount</span>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="product image">
-                                            <div class="img-prdct">
-                                                <img src="imgticket/ticket1-1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p class="pticket">Adult</p>
-                                    </td>
-                                    <td>
-                                        <div class="button-container">
-                                            <button class="cart-qty-plus" type="button" value="+">+</button>
-                                            <input type="text" name="qty" min="0" class="qty form-control" value="0">
-                                            <button class="cart-qty-minus" type="button" value="-">-</button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <input type="text" value="20" class="price form-control" disabled>
-                                    </td>
-                                    <td>€ <span id="amount" class="amount">0</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="product image">
-                                            <div class="img-prdct">
-                                                <img src="imgticket/ticket1-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p class="pticket">Ages 18 and under</p>
-                                    </td>
-                                    <td>
-                                        <div class="button-container">
-                                            <button class="cart-qty-plus" type="button" value="+">+</button>
-                                            <input type="text" name="qty" min="0" class="qty form-control" value="0">
-                                            <button class="cart-qty-minus" type="button" value="-">-</button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0" class="price form-control" disabled>
-                                    </td>
-                                    <td>€ <span id="amount" class="amount">0</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="product image">
-                                            <div class="img-prdct">
-                                                <img src="imgticket/ticket1-3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p class="pticket">Museum card</p>
-                                    </td>
-                                    <td>
-                                        <div class="button-container">
-                                            <button class="cart-qty-plus" type="button" value="+">+</button>
-                                            <input type="text" name="qty" min="0" class="qty form-control" value="0">
-                                            <button class="cart-qty-minus" type="button" value="-">-</button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0" class="price form-control" disabled>
-                                    </td>
-                                    <td>€ <span id="amount" class="amount">0</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="product image">
-                                            <div class="img-prdct">
-                                                <img src="imgticket/ticket1-4.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p class="pticket">EYCA card</p>
-                                    </td>
-                                    <td>
-                                        <div class="button-container">
-                                            <button class="cart-qty-plus" type="button" value="+">+</button>
-                                            <input type="text" name="qty" min="0" class="qty form-control" value="0">
-                                            <button class="cart-qty-minus" type="button" value="-">-</button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <input type="text" value="10" class="price form-control" disabled>
-                                    </td>
-                                    <td>€ <span id="amount" class="amount">0</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="product image">
-                                            <div class="img-prdct">
-                                                <img src="imgticket/ticket1-5.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p class="pticket">I already have a ticket/voucher</p>
-                                    </td>
-                                    <td>
-                                        <div class="button-container">
-                                            <button class="cart-qty-plus" type="button" value="+">+</button>
-                                            <input type="text" name="qty" min="0" class="qty form-control" value="0">
-                                            <button class="cart-qty-minus" type="button" value="-">-</button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0" class="price form-control" disabled>
-                                    </td>
-                                    <td>€ <span id="amount" class="amount">0</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="product image">
-                                            <div class="img-prdct">
-                                                <img src="imgticket/ticket1-6.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p class="pticket">VriendenLoterij VIP card</p>
-                                    </td>
-                                    <td>
-                                        <div class="button-container">
-                                            <button class="cart-qty-plus" type="button" value="+">+</button>
-                                            <input type="text" name="qty" min="0" class="qty form-control" value="0">
-                                            <button class="cart-qty-minus" type="button" value="-">-</button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0" class="price form-control" disabled>
-                                    </td>
-                                    <td>€ <span id="amount" class="amount">0</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="4"></td>
-                                    <td>
-                                        <strong>Total = € <span id="total" class="total">0</span>
-                                        </strong>
-                                    </td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dotslideshow1" onclick="currentSlide(1)"></span>
+                <span class="dotslideshow1" onclick="currentSlide(2)"></span>
+                <span class="dotslideshow1" onclick="currentSlide(3)"></span>
+                <span class="dotslideshow1" onclick="currentSlide(4)"></span>
+                <span class="dotslideshow1" onclick="currentSlide(5)"></span>
             </div>
         </div>
+    </article>
+    <script src="js.js"></script>
+    <footer>
+    <div class="splitfooter leftfooter">
+        <a class="contact" id="contact" href="#">Contact</a>
+        <a class="contact" onclick="showModal(Meercontact1)">Meer contacten</a>
+        <!-- The Modal -->
+        <div id="Meercontact1" class="colection1M">
+            <!-- Modal content -->
+            <div class="colection1MC">
+                <div class="headercolection1M">
+                    <header class="headercolection1M">
+                        <h2>Meer contact informatie</h2>
+                        <span onclick=closeModal(Meercontact1) class="meercontactMC">&times;</span>
+                    </header>
+                </div>
+                <p class="pcolection1M">
+                    Rijksmuseum Amsterdam<br>
+                    Postbus 74888<br>
+                    1070 DN Amsterdam<br>
+                    E-mail: info@rijksmuseum.nl<br>
+                    Telefoonnummer: +31 0 20 6747 000<br>
+                    <br>
+                    Bezoekadres<br>
+                    Museumstraat 1<br>
+                    1071 XX Amsterdam<br>
+                    <br>
+                    Vestigingsadres<br>
+                    Hobbemastraat 20<br>
+                    1071 ZC Amsterdam<br>
+                </p>
+            </div>
     </div>
 </div>

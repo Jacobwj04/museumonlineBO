@@ -46,11 +46,19 @@ a:hover{
 }
 
 .ticket{
-    color: turquoise;
+    color: snow;
     text-decoration: none;
     font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
     font-size: 170%;
+    background: rgb(0, 141, 127);
+    padding: 8px;
+    border-radius: 0.25rem;
+}
+
+.ticket:hover{
+  text-decoration: none;
+  background: snow;
+  color: black;
 }
 
 .reviewimg1{
