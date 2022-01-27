@@ -1499,53 +1499,91 @@ button:focus, input:focus, .form-control:focus{
     font-size: 250%;
   }
   .contact{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 150%;
-    margin-left: 20px;
-    vertical-align: middle;
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 150%;
+  margin-left: 20px;
+  vertical-align: middle;
   }
-  
+
   .asocail{
-    text-align: center;
+  text-align: center;
   }
-  
+
   .istagramimg{
-    height: 25px;
-    width: auto;
-    margin-left: 2px;
-    vertical-align: middle;
+  height: 25px;
+  width: auto;
+  margin-left: 2px;
+  vertical-align: middle;
   }
-  
+
   .facebookimg{
-    width: auto;
-    height: 25px;
-    margin-left: 2px;
-    vertical-align: middle;
+  width: auto;
+  height: 25px;
+  margin-left: 2px;
+  vertical-align: middle;
   }
-  
+
   .youtubeimg{
-    width: 22px;
-    height: auto;
-    margin-left: 2px;
-    vertical-align: middle;
+  width: 22px;
+  height: auto;
+  margin-left: 2px;
+  vertical-align: middle;
   }
-  
+
   .twitterimg{
-    height: 25px;
-    width: auto;
-    margin-left: 2px;
-    vertical-align: middle;
+  height: 25px;
+  width: auto;
+  margin-left: 2px;
+  vertical-align: middle;
   }
-  
+
   .tiktokimg{
-    height: 22.5px;
-    width: auto;
-    margin-left: 2px;
-    vertical-align: middle;
+  height: 22.5px;
+  width: auto;
+  margin-left: 2px;
+  vertical-align: middle;
   }
 }
 
+#container{
+  background-color: aliceblue;
+  width: 900px;
+  height: 600px;
+  margin: 50px auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  border: inset 2px gray;
+}
 
+#myinteraction{
+  padding: 10px;
+}
+
+
+#mapimage{
+  max-width: 100%;
+  margin-top: 20px;
+  height: auto;
+}
+
+nav button {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+#knopNoord, #knopZuid {
+  display: block;
+  width: 300px;
+
+}
+
+#knopWest, #knopOost {
+  display: inline-block;
+  width: 150px;
+
+}
