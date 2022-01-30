@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: snow;
+}
+
+header{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 140%;
+    padding: 10px;
+    padding: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: snow;
+    font-size: 180%;
+    position: absolute;
+    left: 0;
+    padding: 5px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+h2{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+}
+
+#container{
+    color: black;
+    background-color: snow;
+    width: 1000px;
+    height: 600px;
+    margin: 20px auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#myInteraction{
+    padding: 10px;
+}
+
+#myTitle{
+    background-color: rgb(31, 31, 31);
+    color: snow;
+    font-family: sans-serif;
+    padding: 20px;
+    width: 251px;
+}
+
+#myText{
+    padding: 20px;
+}
+
+#myInput{
+    width: 60px;
+    border-radius: 0%
+}
+
+#myButton{
+    color: snow;
+    background-color: rgb(31, 31, 31);
+    height: 30px;
+    width: 60px;
+}
+
+.imgMap{
+    width: 300px;
+    height: auto;
+    
+}
+
+.imgContainer{
+    width: 100%;
+    height: auto;
+}

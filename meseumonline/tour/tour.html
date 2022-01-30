@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rijksmuseum Tour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html">Home</a>
+        <h1>Rijksmuseum Tour</h1>
+    </header>
+    <h2>Kies een getal van 0 t/m 5</h2>
+    <div id="container">
+        <img class="" id="myImage" src="img/0.jpg" height="600px" alt="foto museum">
+        <div id="myInteraction">
+            <div id="myTitle">Het gebouw</div>
+            <img class="imgMap" src="imgtour/map_v2.JPG" alt="plattegrond van het museum">
+            <input type="button" id="myButton" value="Ga naar" onclick="getInput()">
+            <input type="text" id="myInput" autocomplete="off">
+            <div id="myText"></div>
+        </div>
+    </div>
+    <script src="tour.js"></script>
+</body>
+</html>
