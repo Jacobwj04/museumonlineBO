@@ -1,28 +1,103 @@
-var slideExhibitionIndex = 1;
-exhibitionSlides(slideExhibitionIndex);
+const mytitle = document.getElementById("mytitle");
+const myimage = document.getElementById("myimage");
+const myinput = document.getElementById("myinput");
 
-// Next/previous controls
-function exhibitionPlusSlides(n) {
-  exhibitionSlides(slideExhibitionIndex += n);
+let directionButtons = {
+  "noord": document.getElementById('knopNoord'),
+  "oost": document.getElementById('knopOost'),
+  "zuid":  document.getElementById('knopZuid'),
+  "west": document.getElementById('knopWest')
 }
 
-// Thumbnail image controls
-function exhibitionCurrentSlide(n) {
-  exhibitionSlides(slideExhibitionIndex = n);
+let current_index = 0;
+
+let lokaties =[ // array
+    { // 0 = object
+        "titel":"plaats 0",
+        "image":"imgtour/img1.jpeg",
+        "directions": {
+            "west": 2,
+            "oost": 4
+        }
+    },
+    {  //1 = object 
+        "titel":"plaats 1",
+        "image":"imgtour/img2.jpg",
+        "directions": { // object
+            "oost": 1,
+            "zuid": 3
+        }
+
+    },
+    {
+        "titel":"plaats 2",
+        "image":"imgtour/img3.jpg",
+        "directions": { // object
+            "noord": 2
+            
+        }
+    },
+    {
+        "titel":"plaats 3",
+        "image":"imgtour/img4.jpg",
+        "directions": { // object
+            "zuid": 5,
+            "west": 1
+            
+        }
+    },
+    {
+        "titel":"plaats 4",
+        "image":"imgtour/img5.jpg",
+        "directions": { // object
+            "noord": 4
+            
+        }
+    }
+]
+
+//mytitle.innerHTML = "dit is gevoegd door java";
+//myimage.src = "img/1.jpg";
+
+function show(index){
+  mytitle.innerHTML = lokaties[index].titel;
+  myimage.src = lokaties[index].image;
+  current_index = index;
+
+  //knoppen opnieuw berekenen
+  updateDirections();
 }
 
-function exhibitionSlides(n) {
-  var i;
-  var exhibitionSlides = document.getElementsByClassName("exhibition1slides");
-  var exhibitionDots = document.getElementsByClassName("exhibition1dot");
-  if (n > exhibitionSlides.length) {slideExhibitionIndex = 1} 
-  if (n < 1) {slideExhibitionIndex = exhibitionSlides.length}
-  for (i = 0; i < exhibitionSlides.length; i++) {
-    exhibitionSlides[i].style.display = "none"; 
+function updateDirections(){
+
+  let possible = lokaties[current_index].directions;
+
+  let possible_keys = Object.keys(possible);
+
+  console.log(possible);
+  console.log(possible_keys);
+
+  let button_keys = Object.keys(directionButtons);
+  console.log(button_keys);
+
+  for(const key of button_keys){
+      directionButtons[key].style.visibility = "hidden";
   }
-  for (i = 0; i < exhibitionDots.length; i++) {
-    exhibitionDots[i].className = exhibitionDots[i].className.replace(" exhibition1active", "");
+
+  for(const key of possible_keys){
+      directionButtons[key].style.visibility = 'visible';
   }
-  exhibitionSlides[slideExhibitionIndex-1].style.display = "block"; 
-  exhibitionDots[slideExhibitionIndex-1].className += " exhibition1active";
+
+}
+
+function getinput(){
+  show(myinput.value);
+  console.log(myinput.value);
+  myinput.value = "";
+  myinput.focus();
+}
+
+function goDirection(direction){
+  let punt_index = lokaties[current_index].directions[direction];
+  show(punt_index)
 }

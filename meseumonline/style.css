@@ -1,100 +1,785 @@
 *{
-    padding: 0px;
-    box-sizing: border-box; 
+  padding: 0px;
+  box-sizing: border-box; 
 }
 
 header{
-    background-color: rgb(31, 31, 31);
-    height: 60px; 
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-right: 2%;
-    padding-left: 2%;
+  background-color: rgb(31, 31, 31);
+  height: 60px; 
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
 a{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 170%;
-    margin: 20px;
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 170%;
+  margin: 20px;
 }
 
 a:hover{
-  cursor: pointer;
+cursor: pointer;
 }
 
 .aEN{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 170%;
-    border-right: solid snow;
-    margin: 0px;
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 170%;
+  border-right: solid snow;
+  margin: 0px;
 }
 
 .aNL{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 170%;
-    margin: 0px;
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 170%;
+  margin: 0px;
 }
 
 .ticket{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 170%;
-    background: rgb(0, 141, 127);
-    padding: 8px;
-    border-radius: 0.25rem;
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 170%;
+  background: rgb(0, 141, 127);
+  padding: 8px;
+  border-radius: 0.25rem;
 }
 
 .ticket:hover{
-  text-decoration: none;
-  background: snow;
-  color: black;
+text-decoration: none;
+background: snow;
+color: black;
 }
 
 .reviewimg1{
-  width: 20%;
-  height: auto;
-  margin-top: 20px;
+width: 20%;
+height: auto;
+margin-top: 20px;
 }
 
 article{
-  width: 100%;
-  height: 100%;
+width: 100%;
+height: 100%;
 }
 
 .h1geschiedenis{
-  font-family: sans-serif;
-  font-size: 140%;
-  text-align: center;
+font-family: sans-serif;
+font-size: 140%;
+text-align: center;
 }
 
 .h3geschiedenis{
-  font-family: sans-serif;
-  font-size: 110%;
-  text-align: center;
+font-family: sans-serif;
+font-size: 110%;
+text-align: center;
 }
 
 .Pgeschiedenis{
-  font-family: sans-serif;
-  width: 80%;
-  margin: auto;
+font-family: sans-serif;
+width: 80%;
+margin: auto;
 }
 
 body{
-    background-color: snow;
-    margin: 0px;
+  background-color: snow;
+  margin: 0px;
 }
 
+.split {
+height: 100%;
+width: 50%;
+z-index: 1;
+top: 0;
+overflow-x: hidden;
+padding: 20px 50px 50px 50px;
+}
+
+.splitfooter {
+height: 50%;
+width: 50%;
+z-index: 1;
+top: 0;
+overflow-x: hidden;
+padding: 20px 50px 50px 50px;
+}
+
+.left {
+float: left;
+}
+
+.left img{
+margin-bottom: 20px;
+}
+
+.right {
+float: right;
+}
+
+.rightfooter{
+text-align: right;
+vertical-align: middle;
+
+}
+
+.leftfooter{
+text-align: left;
+vertical-align: middle;
+}
+
+.rightmenu{
+color: black;
+margin: 20px;
+font-family: sans-serif;
+width: 30%;
+margin-top: 0%;
+margin-bottom: 0%;
+float: right;
+}
+
+
+img{
+  width: 100%;
+}
+
+.imgwidth{
+width: 70%;
+max-width: 380px;
+height: 250px;
+margin-left: 20px;
+}
+
+nav a:hover{
+  border-bottom: snow;
+  text-decoration: underline;
+}
+
+
+.dropbtn {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  font-size: 200%;
+  border: none;
+  margin-left: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  text-align: left;
+  background-color: rgb(31, 31, 31);
+  min-width: 160px;
+  z-index: 1;
+  position: absolute;
+}
+
+
+.dropdown-content a {
+  color: snow;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+}
+
+/*Change color of dropdown links on hover*/ 
+.dropdown-content a:hover{
+  background-color: none;
+} 
+
+
+/* Show the dropdown menu on hover*/ 
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown*/
+.dropdown:hover .dropbtn {
+  background-color: rgb(10, 10, 10);
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.exhibitioncont1 {
+text-align: center;
+max-width: 80%;
+margin: auto;
+position: relative;
+}
+
+/* Hide the images by default */
+.exhibition1slides {
+display: none;
+}
+
+/* Next & previous buttons */
+
+/* Position the "next button" to the right */
+.exhibition1next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.exhibition1prev:hover, .exhibition1next:hover {
+background-color: rgba(48, 48, 48, 0.678)
+}
+
+/* Caption text */
+.exhibition1text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.exhibition1numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0%;
+}
+
+/* The dots/bullets/indicators */
+
+
+.exhibition1active, .exhibition1dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.exhibition1fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow1{
+position: relative;
+margin-top: 20px;
+max-width: 80%;
+margin: auto;
+}
+
+/* Hide the images by default */
+.slideshowSlides1 {
+display: none;
+}
+
+/* Next & previous buttons */
+.prevslideshow1, .nextslideshow1 {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextslideshow1 {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevslideshow1:hover, .nextslideshow1:hover {
+background-color: rgba(48, 48, 48, 0.678)
+}
+
+/* Caption text */
+.textslideshow1 {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertextslideshow1 {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dotslideshow1 {
+position: relative;
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.activeslideshow1, .dotslideshow1:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fadeslideshow1 {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+.slideshow1img{
+height: 635;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.colectioncont1{
+position: relative;
+margin-top: 20px;
+max-width: 100%;
+margin-top: 20px;
+}
+
+/* Hide the images by default */
+.colection1slides {
+display: none;
+}
+
+/* Next & previous buttons */
+.colection1prev, .colection1next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.colection1next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.colection1prev:hover, .colection1next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.colection1text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.colection1numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.colection1dot {
+position: relative;
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.colection1active, .colection1dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.colection1fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+.h1colection{
+font-family: sans-serif;
+font-size: 150%;
+color: black;
+text-align: center;
+margin-top: 40px;
+}
+
+.colection1M {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.headercolection1M{
+background-color: rgb(31, 31, 31);
+color: white;
+position: top;
+font-size: 110%;
+text-align: center;
+margin-bottom: 20px;
+height: 90px;
+font-family: sans-serif;
+}
+
+.headercolection1M1-2{
+background-color: rgb(31, 31, 31);
+color: white;
+position: top;
+font-size: 110%;
+text-align: center;
+margin-bottom: 20px;
+height: 100px;
+font-family: sans-serif;
+}
+
+.h3colectionM{
+font-family: sans-serif;
+}
+
+.pcolection1M{
+color: black;
+margin-left: 0%;
+margin-right: 0%;
+margin-top: 20px;
+margin-bottom: 20px;
+font-family: sans-serif;
+}
+
+.colection1MC{
+background-color: snow;
+margin: auto;
+padding: 10px;
+border: 1px solid #888;
+width: 30%;
+border: black solid;
+}
+
+.colection1closeM {
+color: rgb(53, 225, 255);
+text-align: right;
+font-size: 28px;
+font-weight: bold;
+padding: 7px;
+}
+
+.colection1closeM:hover,
+.colection1closeM:focus {
+color: rgb(0, 247, 255);
+text-decoration: none;
+cursor: pointer;
+}
+
+footer{
+background-color: rgb(31, 31, 31);
+height: auto; 
+display: flex;
+align-items: center;
+width: 100%;
+}
+
+html{
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+.modal1-ticket {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+margin: auto;
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal1-ticketcon {
+background-color: rgb(31, 31, 31);
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 30%;
+color: snow;
+}
+
+/* The Close Button */
+.modal1-close {
+color: #9e9e9e;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.modal1-close:hover,
+.modal1-close:focus {
+color: rgb(255, 255, 255);
+text-decoration: none;
+cursor: pointer;
+}
+
+.contact{
+color: snow;
+text-decoration: none;
+font-family: sans-serif;
+background-color: rgb(31, 31, 31);
+font-size: 200%;
+margin-left: 20px;
+vertical-align: middle;
+}
+
+.asocail{
+text-align: center;
+vertical-align: middle;
+}
+
+.istagramimg{
+height: 57px;
+width: auto;
+margin-left: 10px;
+vertical-align: middle;
+}
+
+.facebookimg{
+width: auto;
+height: 50px;
+margin-left: 10px;
+vertical-align: middle;
+}
+
+.youtubeimg{
+width: 54px;
+height: auto;
+margin-left: 25px;
+vertical-align: middle;
+}
+
+.twitterimg{
+height: 57px;
+width: auto;
+margin-left: 30px;
+vertical-align: middle;
+}
+
+.tiktokimg{
+height: 45px;
+width: auto;
+margin-left: 15px;
+vertical-align: middle;
+}
+
+.meercontactMC {
+color: rgb(53, 225, 255);
+text-align: right;
+font-size: 28px;
+font-weight: bold;
+padding: 7px;
+cursor: pointer;
+margin-left: 130px;
+}
+
+
+.MaatregelMC {
+color: rgb(53, 225, 255);
+text-align: right;
+font-size: 28px;
+font-weight: bold;
+padding: 7px;
+cursor: pointer;
+margin-left: 60px;
+}
+
+
+.ticketcloseM {
+color: rgb(53, 225, 255);
+text-align: right;
+font-size: 28px;
+font-weight: bold;
+padding: 7px;
+cursor: pointer;
+margin-left: 360px;
+}
+
+
+.tickets1MC{
+background-color: snow;
+margin: auto;
+padding: 10px;
+border: 1px solid #888;
+width: 30%;
+border: black solid;
+font-family: sans-serif;
+}
+
+i{
+margin-right: 10px;
+}
+
+.mb-5{
+font-family: sans-serif;
+}
+
+button:focus, input:focus, .form-control:focus{
+outline: none;
+box-shadow: none;
+} 
+
+.form-control:disabled, .form-control:read-only{
+background-color: snow;
+}
+
+.table tr,
+.table tr td{
+vertical-align: middle;
+}
+
+.button-container{
+display: flex;
+align-items: center;
+}
+
+.button-container .form-control{
+max-width: 30px;
+text-align: center;
+display: inline-block;
+margin: 0px 5px;
+}
+
+#myTabel .form-control{
+width: auto;
+display: inline-block;
+}
+
+.cart-qty-plus,
+.cart-qty-minus{
+width: 38px;
+height: 38px;
+background-color: snow;
+border: 1px solid black;
+border-radius: .25rem;
+}
+
+.cart-qty-plus:hover,
+.cart-qty-minus:hover{
+background-color: turquoise;
+color: black;
+}
+
+.img-prdct{
+width: 50px;
+height: 50px;
+border-radius: 4px;
+background-color: snow;
+}
+
+
+.pticket{
+font-family: sans-serif;
+font-weight: bold;
+font-size: 100%;
+}
+
+
+@media screen and (max-width:1700px) {
 .split {
   height: 100%;
   width: 50%;
@@ -103,394 +788,6 @@ body{
   overflow-x: hidden;
   padding: 20px 50px 50px 50px;
 }
-
-.splitfooter {
-  height: 50%;
-  width: 50%;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding: 20px 50px 50px 50px;
-}
-
-.left {
-  float: left;
-}
-
-.left img{
-  margin-bottom: 20px;
-}
-
-.right {
-  float: right;
-}
-
-.rightfooter{
-  text-align: right;
-  vertical-align: middle;
-
-}
-
-.leftfooter{
-  text-align: left;
-  vertical-align: middle;
-}
-
-.rightmenu{
-  color: black;
-  margin: 20px;
-  font-family: sans-serif;
-  width: 30%;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  float: right;
-}
-
-
-img{
-    width: 100%;
-}
-
-.imgwidth{
-  width: 70%;
-  max-width: 380px;
-  height: 250px;
-  margin-left: 20px;
-}
-
-nav a:hover{
-    border-bottom: snow;
-    text-decoration: underline;
-}
-
-
-.dropbtn {
-    background-color: rgb(31, 31, 31);
-    color: white;
-    font-size: 200%;
-    border: none;
-    margin-left: 10px;
-    margin-right: 20px;
-    cursor: pointer;
-  }
-  
-  
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-
-  .dropdown-content {
-    display: none;
-    text-align: left;
-    background-color: rgb(31, 31, 31);
-    min-width: 160px;
-    z-index: 1;
-    position: absolute;
-  }
-  
-  
-  .dropdown-content a {
-    color: snow;
-    text-decoration: none;
-    padding: 12px 16px;
-    display: block;
-  }
-  
-  /*Change color of dropdown links on hover*/ 
-  .dropdown-content a:hover{
-    background-color: none;
-  } 
-
-  
-  /* Show the dropdown menu on hover*/ 
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown*/
-  .dropdown:hover .dropbtn {
-    background-color: rgb(10, 10, 10);
-  }
-
-  * {box-sizing:border-box}
-
-/* Slideshow container */
-.exhibitioncont1 {
-  text-align: center;
-  max-width: 80%;
-  margin: auto;
-  position: relative;
-}
-
-/* Hide the images by default */
-.exhibition1slides {
-  display: none;
-}
-
-/* Next & previous buttons */
-
-/* Position the "next button" to the right */
-.exhibition1next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.exhibition1prev:hover, .exhibition1next:hover {
-  background-color: rgba(48, 48, 48, 0.678)
-}
-
-/* Caption text */
-.exhibition1text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.exhibition1numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0%;
-}
-
-/* The dots/bullets/indicators */
-
-
-.exhibition1active, .exhibition1dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.exhibition1fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-  * {box-sizing:border-box}
-
-  /* Slideshow container */
-.slideshow1{
-  position: relative;
-  margin-top: 20px;
-  max-width: 80%;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.slideshowSlides1 {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prevslideshow1, .nextslideshow1 {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.nextslideshow1 {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prevslideshow1:hover, .nextslideshow1:hover {
-  background-color: rgba(48, 48, 48, 0.678)
-}
-
-/* Caption text */
-.textslideshow1 {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertextslideshow1 {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dotslideshow1 {
-  position: relative;
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.activeslideshow1, .dotslideshow1:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fadeslideshow1 {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.slideshow1img{
-  height: 635;
-}
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.colectioncont1{
-  position: relative;
-  margin-top: 20px;
-  max-width: 100%;
-  margin-top: 20px;
-}
-
-/* Hide the images by default */
-.colection1slides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.colection1prev, .colection1next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.colection1next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.colection1prev:hover, .colection1next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.colection1text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.colection1numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.colection1dot {
-  position: relative;
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.colection1active, .colection1dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.colection1fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-.h1colection{
-  font-family: sans-serif;
-  font-size: 150%;
-  color: black;
-  text-align: center;
-  margin-top: 40px;
-}
-
 .colection1M {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -545,7 +842,7 @@ nav a:hover{
   margin: auto;
   padding: 10px;
   border: 1px solid #888;
-  width: 30%;
+  width: 33%;
   border: black solid;
 }
 
@@ -556,33 +853,36 @@ nav a:hover{
   font-weight: bold;
   padding: 7px;
 }
-
-.colection1closeM:hover,
-.colection1closeM:focus {
-color: rgb(0, 247, 255);
-text-decoration: none;
-cursor: pointer;
+.tickets1MC{
+  background-color: snow;
+  margin: auto;
+  padding: 50px;
+  border: 1px solid #888;
+  width: 30%;
+  border: black solid;
+  font-family: sans-serif;
+}
+#myTabel .form-control{
+  width: auto;
+  display: inline-block;
+}
 }
 
-footer{
-  background-color: rgb(31, 31, 31);
-  height: auto; 
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
 
-html{
-    scroll-behavior: smooth;
-    width: 100vw;
+@media screen and (max-width:1500px) {
+.split {
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding: 20px 50px 50px 50px;
 }
-
-.modal1-ticket {
+.colection1M {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
-  margin: auto;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -592,103 +892,359 @@ html{
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
-.modal1-ticketcon {
+.headercolection1M{
   background-color: rgb(31, 31, 31);
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 30%;
-  color: snow;
+  color: white;
+  position: top;
+  font-size: 110%;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 90px;
+  font-family: sans-serif;
 }
 
-/* The Close Button */
-.modal1-close {
-  color: #9e9e9e;
-  float: right;
+.headercolection1M1-2{
+  background-color: rgb(31, 31, 31);
+  color: white;
+  position: top;
+  font-size: 110%;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 100px;
+  font-family: sans-serif;
+}
+
+.h3colectionM{
+  font-family: sans-serif;
+}
+
+.pcolection1M{
+  color: black;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.colection1MC{
+  background-color: snow;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 36%;
+  border: black solid;
+}
+
+.colection1closeM {
+  color: rgb(53, 225, 255);
+  text-align: right;
   font-size: 28px;
   font-weight: bold;
+  padding: 7px;
+}
+.tickets1MC{
+  background-color: snow;
+  margin: auto;
+  padding: 50px;
+  border: 1px solid #888;
+  width: 30%;
+  border: black solid;
+  font-family: sans-serif;
+}
+#myTabel .form-control{
+  width: auto;
+  display: inline-block;
 }
 
-.modal1-close:hover,
-.modal1-close:focus {
-color: rgb(255, 255, 255);
-text-decoration: none;
-cursor: pointer;
 }
+
+@media screen and (max-width:1230px) {
+.split {
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding: 20px 50px 50px 50px;
+}
+header{
+  background-color: rgb(31, 31, 31);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.h1geschiedenis{
+  font-family: sans-serif;
+  font-size: 150%;
+  text-align: center;
+}
+
+.h3geschiedenis{
+  font-family: sans-serif;
+  font-size: 140%;
+  text-align: center;
+}
+.colection1M {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.headercolection1M{
+  background-color: rgb(31, 31, 31);
+  color: white;
+  position: top;
+  font-size: 110%;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 90px;
+  font-family: sans-serif;
+}
+
+.headercolection1M1-2{
+  background-color: rgb(31, 31, 31);
+  color: white;
+  position: top;
+  font-size: 110%;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 100px;
+  font-family: sans-serif;
+}
+
+.h3colectionM{
+  font-family: sans-serif;
+}
+
+.pcolection1M{
+  color: black;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.colection1MC{
+  background-color: snow;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 47%;
+  border: black solid;
+}
+
+.colection1closeM {
+  color: rgb(53, 225, 255);
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 7px;
+}
+.tickets1MC{
+  background-color: snow;
+  margin: auto;
+  padding: 50px;
+  border: 1px solid #888;
+  width: 30%;
+  border: black solid;
+  font-family: sans-serif;
+}
+#myTabel .form-control{
+  width: auto;
+  display: inline-block;
+}
+}
+
+@media screen and (max-width:950px) {
+.split {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding: 20px 50px 50px 50px;
+}
+header{
+  background-color: rgb(31, 31, 31);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+a{
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 150%;
+  margin: 20px;
+}
+
+.aEN{
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 150%;
+  border-right: solid snow;
+  margin: 0px;
+}
+
+.aNL{
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 150%;
+  margin: 0px;
+}
+
+.ticket{
+  color: turquoise;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 150%;
+}
+
 
 .contact{
   color: snow;
   text-decoration: none;
   font-family: sans-serif;
   background-color: rgb(31, 31, 31);
-  font-size: 200%;
+  font-size: 100%;
   margin-left: 20px;
   vertical-align: middle;
 }
 
-.asocail{
+footer{
+  background-color: rgb(31, 31, 31);
+  height: auto; 
+  align-items: center;
+  width: 100%;
+  height: 180px;
+}
+.h1geschiedenis{
+  font-family: sans-serif;
+  font-size: 170%;
   text-align: center;
-  vertical-align: middle;
 }
 
-.istagramimg{
-  height: 57px;
-  width: auto;
-  margin-left: 10px;
-  vertical-align: middle;
+.h3geschiedenis{
+  font-family: sans-serif;
+  font-size: 160%;
+  text-align: center;
 }
 
-.facebookimg{
-  width: auto;
-  height: 50px;
-  margin-left: 10px;
-  vertical-align: middle;
+.Pgeschiedenis{
+  text-align: center;
+  font-family: sans-serif;
+  width: 80%;
+  margin: auto;
+  font-size: 140%;
+}
+.colection1M {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.youtubeimg{
-  width: 54px;
-  height: auto;
-  margin-left: 25px;
-  vertical-align: middle;
+.headercolection1M{
+  background-color: rgb(31, 31, 31);
+  color: white;
+  position: top;
+  font-size: 110%;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 90px;
+  font-family: sans-serif;
 }
 
-.twitterimg{
-  height: 57px;
-  width: auto;
-  margin-left: 30px;
-  vertical-align: middle;
+.headercolection1M1-2{
+  background-color: rgb(31, 31, 31);
+  color: white;
+  position: top;
+  font-size: 110%;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 100px;
+  font-family: sans-serif;
 }
 
-.tiktokimg{
-  height: 45px;
-  width: auto;
-  margin-left: 15px;
-  vertical-align: middle;
+.h3colectionM{
+  font-family: sans-serif;
+}
+.pcolection1M{
+  color: black;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
 }
 
-.meercontactMC {
+.colection1MC{
+  background-color: snow;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  border: black solid;
+}
+
+.colection1closeM {
   color: rgb(53, 225, 255);
   text-align: right;
   font-size: 28px;
   font-weight: bold;
   padding: 7px;
-  cursor: pointer;
-  margin-left: 130px;
 }
-
-
-.MaatregelMC {
-  color: rgb(53, 225, 255);
-  text-align: right;
-  font-size: 28px;
-  font-weight: bold;
-  padding: 7px;
-  cursor: pointer;
-  margin-left: 60px;
+.tickets1MC{
+  background-color: snow;
+  margin: auto;
+  padding: 50px;
+  border: 1px solid #888;
+  width: 30%;
+  border: black solid;
+  font-family: sans-serif;
 }
-
-
+#myTabel .form-control{
+  width: auto;
+  display: inline-block;
+}
+.colection1numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 .ticketcloseM {
   color: rgb(53, 225, 255);
   text-align: right;
@@ -696,809 +1252,13 @@ cursor: pointer;
   font-weight: bold;
   padding: 7px;
   cursor: pointer;
-  margin-left: 360px;
+  margin-left: 480px;
 }
-
-
-.tickets1MC{
-  background-color: snow;
-  margin: auto;
-  padding: 10px;
-  border: 1px solid #888;
-  width: 30%;
-  border: black solid;
+.h3colectionM{
   font-family: sans-serif;
+  font-size: 250%;
 }
-
-i{
-  margin-right: 10px;
-}
-
-.mb-5{
-  font-family: sans-serif;
-}
-
-button:focus, input:focus, .form-control:focus{
-  outline: none;
-  box-shadow: none;
-} 
-
-.form-control:disabled, .form-control:read-only{
-  background-color: snow;
-}
-
-.table tr,
-.table tr td{
-  vertical-align: middle;
-}
-
-.button-container{
-  display: flex;
-  align-items: center;
-}
-
-.button-container .form-control{
-  max-width: 30px;
-  text-align: center;
-  display: inline-block;
-  margin: 0px 5px;
-}
-
-#myTabel .form-control{
-  width: auto;
-  display: inline-block;
-}
-
-.cart-qty-plus,
-.cart-qty-minus{
-  width: 38px;
-  height: 38px;
-  background-color: snow;
-  border: 1px solid black;
-  border-radius: .25rem;
-}
-
-.cart-qty-plus:hover,
-.cart-qty-minus:hover{
-  background-color: turquoise;
-  color: black;
-}
-
-.img-prdct{
-  width: 50px;
-  height: 50px;
-  border-radius: 4px;
-  background-color: snow;
-}
-
-
-.pticket{
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 100%;
-}
-
-
-@media screen and (max-width:1700px) {
-  .split {
-    height: 100%;
-    width: 50%;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding: 20px 50px 50px 50px;
-  }
-  .colection1M {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  .headercolection1M{
-    background-color: rgb(31, 31, 31);
-    color: white;
-    position: top;
-    font-size: 110%;
-    text-align: center;
-    margin-bottom: 20px;
-    height: 90px;
-    font-family: sans-serif;
-  }
-  
-  .headercolection1M1-2{
-    background-color: rgb(31, 31, 31);
-    color: white;
-    position: top;
-    font-size: 110%;
-    text-align: center;
-    margin-bottom: 20px;
-    height: 100px;
-    font-family: sans-serif;
-  }
-  
-  .h3colectionM{
-    font-family: sans-serif;
-  }
-  
-  .pcolection1M{
-    color: black;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: sans-serif;
-  }
-  
-  .colection1MC{
-    background-color: snow;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid #888;
-    width: 33%;
-    border: black solid;
-  }
-  
-  .colection1closeM {
-    color: rgb(53, 225, 255);
-    text-align: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 7px;
-  }
-  .tickets1MC{
-    background-color: snow;
-    margin: auto;
-    padding: 50px;
-    border: 1px solid #888;
-    width: 30%;
-    border: black solid;
-    font-family: sans-serif;
-  }
-  #myTabel .form-control{
-    width: auto;
-    display: inline-block;
-  }
-}
-
-
-@media screen and (max-width:1500px) {
-  .split {
-    height: 100%;
-    width: 50%;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding: 20px 50px 50px 50px;
-  }
-  .colection1M {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  .headercolection1M{
-    background-color: rgb(31, 31, 31);
-    color: white;
-    position: top;
-    font-size: 110%;
-    text-align: center;
-    margin-bottom: 20px;
-    height: 90px;
-    font-family: sans-serif;
-  }
-  
-  .headercolection1M1-2{
-    background-color: rgb(31, 31, 31);
-    color: white;
-    position: top;
-    font-size: 110%;
-    text-align: center;
-    margin-bottom: 20px;
-    height: 100px;
-    font-family: sans-serif;
-  }
-  
-  .h3colectionM{
-    font-family: sans-serif;
-  }
-  
-  .pcolection1M{
-    color: black;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: sans-serif;
-  }
-  
-  .colection1MC{
-    background-color: snow;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid #888;
-    width: 36%;
-    border: black solid;
-  }
-  
-  .colection1closeM {
-    color: rgb(53, 225, 255);
-    text-align: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 7px;
-  }
-  .tickets1MC{
-    background-color: snow;
-    margin: auto;
-    padding: 50px;
-    border: 1px solid #888;
-    width: 30%;
-    border: black solid;
-    font-family: sans-serif;
-  }
-  #myTabel .form-control{
-    width: auto;
-    display: inline-block;
-  }
-
-}
-
-@media screen and (max-width:1230px) {
-  .split {
-    height: 100%;
-    width: 50%;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding: 20px 50px 50px 50px;
-  }
-  header{
-    background-color: rgb(31, 31, 31);
-    height: 90px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-  .h1geschiedenis{
-    font-family: sans-serif;
-    font-size: 150%;
-    text-align: center;
-  }
-  
-  .h3geschiedenis{
-    font-family: sans-serif;
-    font-size: 140%;
-    text-align: center;
-  }
-  .colection1M {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  .headercolection1M{
-    background-color: rgb(31, 31, 31);
-    color: white;
-    position: top;
-    font-size: 110%;
-    text-align: center;
-    margin-bottom: 20px;
-    height: 90px;
-    font-family: sans-serif;
-  }
-  
-  .headercolection1M1-2{
-    background-color: rgb(31, 31, 31);
-    color: white;
-    position: top;
-    font-size: 110%;
-    text-align: center;
-    margin-bottom: 20px;
-    height: 100px;
-    font-family: sans-serif;
-  }
-  
-  .h3colectionM{
-    font-family: sans-serif;
-  }
-  
-  .pcolection1M{
-    color: black;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: sans-serif;
-  }
-  
-  .colection1MC{
-    background-color: snow;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid #888;
-    width: 47%;
-    border: black solid;
-  }
-  
-  .colection1closeM {
-    color: rgb(53, 225, 255);
-    text-align: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 7px;
-  }
-  .tickets1MC{
-    background-color: snow;
-    margin: auto;
-    padding: 50px;
-    border: 1px solid #888;
-    width: 30%;
-    border: black solid;
-    font-family: sans-serif;
-  }
-  #myTabel .form-control{
-    width: auto;
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width:950px) {
-  .split {
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding: 20px 50px 50px 50px;
-  }
-  header{
-    background-color: rgb(31, 31, 31);
-    height: 90px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  a{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 150%;
-    margin: 20px;
-  }
-
-  .aEN{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 150%;
-    border-right: solid snow;
-    margin: 0px;
-}
-
-.aNL{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 150%;
-    margin: 0px;
-}
-
-.ticket{
-    color: turquoise;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 150%;
-}
-
-
-  .contact{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 100%;
-    margin-left: 20px;
-    vertical-align: middle;
-  }
-
-  footer{
-    background-color: rgb(31, 31, 31);
-    height: auto; 
-    align-items: center;
-    width: 100%;
-    height: 180px;
-  }
-  .h1geschiedenis{
-    font-family: sans-serif;
-    font-size: 170%;
-    text-align: center;
-  }
-  
-  .h3geschiedenis{
-    font-family: sans-serif;
-    font-size: 160%;
-    text-align: center;
-  }
-
-  .Pgeschiedenis{
-    text-align: center;
-    font-family: sans-serif;
-    width: 80%;
-    margin: auto;
-    font-size: 140%;
-  }
-  .colection1M {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  .headercolection1M{
-    background-color: rgb(31, 31, 31);
-    color: white;
-    position: top;
-    font-size: 110%;
-    text-align: center;
-    margin-bottom: 20px;
-    height: 90px;
-    font-family: sans-serif;
-  }
-  
-  .headercolection1M1-2{
-    background-color: rgb(31, 31, 31);
-    color: white;
-    position: top;
-    font-size: 110%;
-    text-align: center;
-    margin-bottom: 20px;
-    height: 100px;
-    font-family: sans-serif;
-  }
-  
-  .h3colectionM{
-    font-family: sans-serif;
-  }
-  .pcolection1M{
-    color: black;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-family: sans-serif;
-  }
-  
-  .colection1MC{
-    background-color: snow;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid #888;
-    width: 80%;
-    border: black solid;
-  }
-  
-  .colection1closeM {
-    color: rgb(53, 225, 255);
-    text-align: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 7px;
-  }
-  .tickets1MC{
-    background-color: snow;
-    margin: auto;
-    padding: 50px;
-    border: 1px solid #888;
-    width: 30%;
-    border: black solid;
-    font-family: sans-serif;
-  }
-  #myTabel .form-control{
-    width: auto;
-    display: inline-block;
-  }
-  .colection1numbertext {
-    color: #f2f2f2;
-    font-size: 20px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  .ticketcloseM {
-    color: rgb(53, 225, 255);
-    text-align: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 7px;
-    cursor: pointer;
-    margin-left: 480px;
-  }
-  .h3colectionM{
-    font-family: sans-serif;
-    font-size: 250%;
-  }
-  .contact{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 150%;
-    margin-left: 20px;
-    vertical-align: middle;
-  }
-  
-  .asocail{
-    text-align: center;
-  }
-  
-  .istagramimg{
-    height: 25px;
-    width: auto;
-    margin-left: 2px;
-    vertical-align: middle;
-  }
-  
-  .facebookimg{
-    width: auto;
-    height: 25px;
-    margin-left: 2px;
-    vertical-align: middle;
-  }
-  
-  .youtubeimg{
-    width: 22px;
-    height: auto;
-    margin-left: 2px;
-    vertical-align: middle;
-  }
-  
-  .twitterimg{
-    height: 25px;
-    width: auto;
-    margin-left: 2px;
-    vertical-align: middle;
-  }
-  
-  .tiktokimg{
-    height: 22.5px;
-    width: auto;
-    margin-left: 2px;
-    vertical-align: middle;
-  }
-}
-
-@media screen and (max-width:450px) {
-  .split {
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding: 20px 50px 50px 50px;
-  }
-  header{
-    background-color: rgb(31, 31, 31);
-    height: 180px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  a{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 130%;
-    margin: 20px;
-  }
-
-  .aEN{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 130%;
-    border-right: solid snow;
-    margin: 0px;
-}
-
-.aNL{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 130%;
-    margin: 0px;
-}
-
-.ticket{
-    color: turquoise;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 130%;
-}
-
-
-  .contact{
-    color: snow;
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(31, 31, 31);
-    font-size: 900%;
-    margin-left: 20px;
-    vertical-align: middle;
-  }
-
-  footer{
-    background-color: rgb(31, 31, 31);
-    height: auto; 
-    align-items: center;
-    width: 100%;
-    height: 180px;
-  }
-  .h1geschiedenis{
-    font-family: sans-serif;
-    font-size: 170%;
-    text-align: center;
-  }
-  
-  .h3geschiedenis{
-    font-family: sans-serif;
-    font-size: 160%;
-    text-align: center;
-  }
-
-  .Pgeschiedenis{
-    text-align: center;
-    font-family: sans-serif;
-    width: 80%;
-    margin: auto;
-    font-size: 140%;
-  }
-  .colection1M {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  .headercolection1M{
-    background-color: rgb(31, 31, 31);
-    color: white;
-    position: top;
-    font-size: 110%;
-    text-align: center;
-    margin-bottom: 20px;
-    height: 90px;
-    font-family: sans-serif;
-  }
-  
-  .headercolection1M1-2{
-    background-color: rgb(31, 31, 31);
-    color: white;
-    position: top;
-    font-size: 110%;
-    text-align: center;
-    margin-bottom: 20px;
-    height: 100px;
-    font-family: sans-serif;
-  }
-  
-  .h3colectionM{
-    font-family: sans-serif;
-  }
-  .pcolection1M{
-    color: black;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-family: sans-serif;
-  }
-  
-  .colection1MC{
-    background-color: snow;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid #888;
-    width: 80%;
-    border: black solid;
-  }
-  
-  .colection1closeM {
-    color: rgb(53, 225, 255);
-    text-align: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 7px;
-  }
-  .tickets1MC{
-    background-color: snow;
-    margin: auto;
-    padding: 50px;
-    border: 1px solid #888;
-    width: 30%;
-    border: black solid;
-    font-family: sans-serif;
-  }
-  #myTabel .form-control{
-    width: auto;
-    display: inline-block;
-  }
-  .colection1numbertext {
-    color: #f2f2f2;
-    font-size: 20px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  .ticketcloseM {
-    color: rgb(53, 225, 255);
-    text-align: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 7px;
-    cursor: pointer;
-    margin-left: 480px;
-  }
-  .h3colectionM{
-    font-family: sans-serif;
-    font-size: 250%;
-  }
-  .contact{
+.contact{
   color: snow;
   text-decoration: none;
   font-family: sans-serif;
@@ -1506,84 +1266,284 @@ button:focus, input:focus, .form-control:focus{
   font-size: 150%;
   margin-left: 20px;
   vertical-align: middle;
-  }
+}
 
-  .asocail{
+.asocail{
   text-align: center;
-  }
+}
 
-  .istagramimg{
+.istagramimg{
   height: 25px;
   width: auto;
   margin-left: 2px;
   vertical-align: middle;
-  }
+}
 
-  .facebookimg{
+.facebookimg{
   width: auto;
   height: 25px;
   margin-left: 2px;
   vertical-align: middle;
-  }
+}
 
-  .youtubeimg{
+.youtubeimg{
   width: 22px;
   height: auto;
   margin-left: 2px;
   vertical-align: middle;
-  }
+}
 
-  .twitterimg{
+.twitterimg{
   height: 25px;
   width: auto;
   margin-left: 2px;
   vertical-align: middle;
-  }
+}
 
-  .tiktokimg{
+.tiktokimg{
   height: 22.5px;
   width: auto;
   margin-left: 2px;
   vertical-align: middle;
-  }
+}
 }
 
-#container{
-  background-color: aliceblue;
-  width: 900px;
-  height: 600px;
-  margin: 50px auto auto auto;
-  display: grid;
-  grid-template-columns: auto auto;
-  border: inset 2px gray;
+@media screen and (max-width:450px) {
+.split {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding: 20px 50px 50px 50px;
+}
+header{
+  background-color: rgb(31, 31, 31);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
-#myinteraction{
-  padding: 10px;
+a{
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 130%;
+  margin: 20px;
+}
+
+.aEN{
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 130%;
+  border-right: solid snow;
+  margin: 0px;
+}
+
+.aNL{
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 130%;
+  margin: 0px;
+}
+
+.ticket{
+  color: turquoise;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 130%;
 }
 
 
-#mapimage{
-  max-width: 100%;
-  margin-top: 20px;
-  height: auto;
+.contact{
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 900%;
+  margin-left: 20px;
+  vertical-align: middle;
 }
 
-nav button {
-  background-color: black;
+footer{
+  background-color: rgb(31, 31, 31);
+  height: auto; 
+  align-items: center;
+  width: 100%;
+  height: 180px;
+}
+.h1geschiedenis{
+  font-family: sans-serif;
+  font-size: 170%;
+  text-align: center;
+}
+
+.h3geschiedenis{
+  font-family: sans-serif;
+  font-size: 160%;
+  text-align: center;
+}
+
+.Pgeschiedenis{
+  text-align: center;
+  font-family: sans-serif;
+  width: 80%;
+  margin: auto;
+  font-size: 140%;
+}
+.colection1M {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.headercolection1M{
+  background-color: rgb(31, 31, 31);
   color: white;
-  font-size: 16px;
+  position: top;
+  font-size: 110%;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 90px;
+  font-family: sans-serif;
+}
+
+.headercolection1M1-2{
+  background-color: rgb(31, 31, 31);
+  color: white;
+  position: top;
+  font-size: 110%;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 100px;
+  font-family: sans-serif;
+}
+
+.h3colectionM{
+  font-family: sans-serif;
+}
+.pcolection1M{
+  color: black;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.colection1MC{
+  background-color: snow;
+  margin: auto;
   padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  border: black solid;
 }
 
-#knopNoord, #knopZuid {
-  display: block;
-  width: 300px;
-
+.colection1closeM {
+  color: rgb(53, 225, 255);
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 7px;
 }
-
-#knopWest, #knopOost {
+.tickets1MC{
+  background-color: snow;
+  margin: auto;
+  padding: 50px;
+  border: 1px solid #888;
+  width: 30%;
+  border: black solid;
+  font-family: sans-serif;
+}
+#myTabel .form-control{
+  width: auto;
   display: inline-block;
-  width: 150px;
+}
+.colection1numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.ticketcloseM {
+  color: rgb(53, 225, 255);
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 7px;
+  cursor: pointer;
+  margin-left: 480px;
+}
+.h3colectionM{
+  font-family: sans-serif;
+  font-size: 250%;
+}
+.contact{
+  color: snow;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(31, 31, 31);
+  font-size: 150%;
+  margin-left: 20px;
+  vertical-align: middle;
+}
 
+.asocail{
+  text-align: center;
+}
+
+.istagramimg{
+  height: 25px;
+  width: auto;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+.facebookimg{
+  width: auto;
+  height: 25px;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+.youtubeimg{
+  width: 22px;
+  height: auto;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+.twitterimg{
+  height: 25px;
+  width: auto;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+.tiktokimg{
+  height: 22.5px;
+  width: auto;
+  margin-left: 2px;
+  vertical-align: middle;
+}
 }

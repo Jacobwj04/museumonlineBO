@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MuseumOnline</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -56,7 +56,7 @@
                 <div class="colection1MC">
                     <div class="headercolection1M">
                         <header class="headercolection1M">
-                            <h2>Reviews van het Rijksmuseum</h2>
+                            <h2>Reviews van het Rijksmeseum</h2>
                             <span onclick=closeModal(ReviewsM) class="MaatregelMC">&times;</span>
                         </header>
                     </div>
@@ -72,7 +72,7 @@
                         to do in Amsterdam<br>
                         Dec 2021<br>
                         Heel leuk museum. Het geeft je de kans om meer te leren over Nederlandse kunstwerk.<br>
-                        Het heeft een leuke omgeving want in de buurt is de Van Gogh museum.<br>
+                        Het heeft een leuke omgeving want in de buurt is de Van Gogh meseum.<br>
                     </p>
                 </div>
             </div>
@@ -307,7 +307,7 @@
                 kostte 100 gulden en is nog steeds een van de topstukken van het Rijksmuseum.
             </p>
             <h3 class="h3geschiedenis">
-                Het Rijksmuseum
+                Het Rijksmeseum
             </h3>
             <p class="Pgeschiedenis">
                 Met Willem I als nieuwe koning vanaf 1813, verhuisde het museum als
@@ -323,7 +323,7 @@
             </p>
             <h3 class="h3geschiedenis">
                 <h1 class="h1colection">
-                    Colectie van het Rijksmuseum
+                    Colectie van het Rijksmeseum
                 </h1>
             <!-- Slideshow container -->
             <div id="Collectie" class="colectioncont1">
@@ -710,11 +710,6 @@
         </div>
         <div class="split right">
             <h3 class="h3geschiedenis">Exhibition</h3>
-            <!-- Slideshow container -->
-            <div class="exhibitioncont1">
-                <!-- Full-width images with number and caption text -->
-                <div class="exhibition1slides exhibition1fade">
-                    <p class="exhibition1numbertext">Klik afbeelding voor informatie</p>
                     <img onclick="showModal(exhibition1)" src="imgexhibition1/exhibition1-1.jpg"
                         alt="een vrouw verkleed in zwart en het lijkt dat bijna aan het huilen is">
                     <!-- The Modal -->
@@ -756,8 +751,6 @@
                     </div>
                     <p class="exhibition1text">vergeet me niet</p>
                     <span class="exhibition1dot" onclick="exhibitionCurrentSlide(1)"></span>
-                </div>
-            </div>
             <h3 class="h3geschiedenis">Foto's</h3>
             <!-- Slideshow container -->
             <div id="Foto's" class="slideshow1">
@@ -809,25 +802,9 @@
                 <span class="dotslideshow1" onclick="currentSlide(3)"></span>
                 <span class="dotslideshow1" onclick="currentSlide(4)"></span>
                 <span class="dotslideshow1" onclick="currentSlide(5)"></span>
-
-                <div id="container">
-                    <img id="myimage" src="imgtour/img1.jpeg" height="600px" alt="foto sb">
-                    <div id="myinteraction">
-                        <div id="mytitle">hier komt de titel</div>
-                        <input type="text" id="myinput" autocomplete="off">
-                        <input type="button" value="voer in" onclick="getinput()">
-                        <h3>kies welke richting je op wilt:</h3>
-                        <nav>
-                            <button id="knopNoord" onclick="goDirection('noord')">Noord</button>
-                            <button id="knopWest" onclick="goDirection('west')">West</button>
-                            <button id="knopOost" onclick="goDirection('oost')">Oost</button>
-                            <button id="knopZuid" onclick="goDirection('zuid')">Zuid</button>
-                        </nav>
-                        <img src="imgtour/map.JPG" id="mapimage"  alt="">
-                    </div>
-                </div>
-                <script src="script.js"></script>
-        </article>
+            </div>
+    </article>
+    <script src="js.js"></script>
     <footer>
         <div class="splitfooter leftfooter">
             <a class="contact" id="contact" href="#">Contact</a>
